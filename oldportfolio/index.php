@@ -102,7 +102,7 @@
 			<div id='omcard' class='card'>
 				<ul>
 					<li>Naam: <p selectable>Ruurd Bijlsma</p></li>
-					<li>Mail: <a selectable href='mailto:ruurdbijlsma@gmail.com'>ruurdbijlsma@gmail.com</a></li>
+					<li>Mail: <a selectable href='mailto:ruurd@bijlsma.dev'>ruurd@bijlsma.dev</a></li>
 					<li>Telefoon: <p selectable>0658648550</p></li>
 					<li>School: <p selectable>NHL Hogeschool</p></li>
 					<li>Klas: <p selectable>I1b Informatica</p></li>

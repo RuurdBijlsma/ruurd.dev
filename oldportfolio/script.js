@@ -323,7 +323,7 @@ function sendMsg() {
     if ($("input[type='email']:nth-child(odd)").css('opacity') == 1) {
         to = $("input[type='email']:nth-child(odd)").val();
     } else {
-        to = 'ruurdbijlsma@gmail.com';
+        to = 'ruurd@bijlsma.dev';
     }
     from = $("input[type='email']:nth-child(even)").val();
 

@@ -69,7 +69,7 @@ function sendMail() {
     let from = document.getElementById('sender-email').value,
         message = document.getElementById('message').value,
         contactElement = document.getElementById('contact-form');
-    to = 'ruurdbijlsma@gmail.com';
+    to = 'ruurd@bijlsma.dev';
 
     if (from != '' && message != '') {
         request('POST', 'portfolio/mail.php', { msg: message, to: to, from: from }).then(function (response) {
