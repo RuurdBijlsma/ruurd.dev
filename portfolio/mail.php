@@ -19,7 +19,7 @@
             $headers .= "Reply-To: " . $from . "\r\n";
             $headers .= 'X-Mailer: PHP/' . phpversion();
 
-            mail("Contact Ruurd Bijlsma <ruurdbijlsma@gmail.com>", $subject, $message, $headers);
+            mail("Contact Ruurd Bijlsma <ruurd@bijlsma.dev>", $subject, $message, $headers);
 
             echo "success";
         }
