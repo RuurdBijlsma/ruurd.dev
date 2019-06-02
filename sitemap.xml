@@ -9,10 +9,6 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>https://ruurd.dev/boot/</loc>
- <changefreq>weekly</changefreq>
-</url>
-<url>
  <loc>https://ruurd.dev/brainfuck/</loc>
  <changefreq>weekly</changefreq>
 </url>
