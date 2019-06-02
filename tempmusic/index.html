@@ -1,0 +1,73 @@
+<html lang='nl'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35913371-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35913371-8');
+    </script>
+    <meta charset='utf-8' />
+    <title>RuurdMusic</title>
+    <meta name='theme-color' content='#000000'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='icon' sizes='192x192' href='img/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='img/favicon.png'>
+    <!-- Favicon moet 192x192 zijn -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel='stylesheet' href='main.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='script.js' type='text/javascript'></script>
+    <script src='MediaPlayer.js' type='text/javascript'></script>
+    <script src='Singleton.js' type='text/javascript'></script>
+    <script src='FileStorage.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <div class="root">
+        <div class="tabs">
+            <header class="tab-header">
+                <div class="tab-name" active onclick="selectTab(event.target)" tabname='listen'>Listen</div>
+                <div class="tab-name" onclick="selectTab(event.target)" tabname='search'>Search</div>
+            </header>
+            <div class="tab listen"></div>
+            <div class="tab search">
+                <input type="search" placeholder="Search songs" class="search-input" onchange="searchSong(event.target.value)"
+                    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <div class="search-results"></div>
+            </div>
+        </div>
+        <div class="media-player">
+            <audio class="audio-player"></audio>
+            <div class="seek-bar">
+                <div class="seek-background"> </div>
+                <div class="seek-progress"> </div>
+                <div class="seek-thumb"> </div>
+            </div>
+            <div class="song">
+                <span class="song-title"></span>
+                <span class="song-artist"></span>
+            </div>
+            <div class="media-controls">
+                <div class="media-previous" onclick="media.previous()">
+                    <i class="material-icons">skip_previous</i>
+                </div>
+                <div class="media-playpause" onclick="media.playPause(event.target)">
+                    <i class="material-icons">play_arrow</i>
+                </div>
+                <div class="media-next" onclick="media.next()">
+                    <i class="material-icons">skip_next</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

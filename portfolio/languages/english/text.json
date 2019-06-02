@@ -1,0 +1,22 @@
+{
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "websites": "Websites",
+    "contact": "Contact",
+    "requestLimit": "Too many requests received",
+    "mailConfirmation": [
+        "The mail has been sent to",
+        ""
+    ],
+    "phone": "Phone",
+    "me": [
+        "I'm Ruurd Bijlsma, I'm a Dutch computer science student starting my third year at NHL University of Applied Sciences in Leeuwarden. In my free time I like to create programs to help me in my daily life, like a video editor, or a camera app for my phone.",
+        "I have experience using agile and version control, for all recent projects I've used Scrum and Git to manage deadlines and code. In the projects sections of my portfolio you can find some of the work I've done. For more projects you can visit my <a style='color:#227dc0' href='https://github.com/ruurdbijlsma' title='Github' target='_blank' rel='noopener noreferrer'>Github</a>.",
+        ""
+    ],
+    "social": "Social Media",
+    "mail": "Mail",
+    "message": "Message",
+    "messagePlaceholder": "Type a message...",
+    "senderPlaceholder": "Sender..."
+}

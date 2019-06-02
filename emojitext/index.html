@@ -1,0 +1,59 @@
+<html lang='nl'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35913371-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35913371-8');
+    </script>
+    <meta charset='utf-8' />
+    <title>EmojiText</title>
+    <meta name='theme-color' content='#c32f12'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='icon' sizes='192x192' href='img/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='img/favicon.png'>
+    <!-- Favicon moet 192x192 zijn -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,500italic,700italic,700,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='main.css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.0.0.min.js'></script>
+    <script src='script.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <form id="controls" onsubmit="render(event)">
+        <p>Font Size</p>
+        <input type="number" name="fontSize" value="20">
+        <p>Sensitivity</p>
+        <input type="range" name="sensitivity" min="0" max="1" step="0.01" value="0.8">
+        <p>Canvas Magnifier</p>
+        <input type="number" name="magnifier" value="2">
+        <p>Text Emoji</p>
+        <input type="text" name="frontChar" value="😂">
+        <p>Background Emoji</p>
+        <input type="text" name="backChar" value="💯">
+        <p>Font Family (E.g. Arial, Consolas, Georgia)</p>
+        <input type="text" name="fontFamily" value="Times New Roman">
+        <p>Line Height</p>
+        <input type="number" name="lineHeight" value="0.8" step="0.1">
+        <p>Auto Refresh</p>
+        <input type="checkbox" checked onchange="autoRefresh(event)">
+        <p>Text</p>
+        <textarea type="text" name="text">Ayy
+Lmao</textarea>
+        <input type="submit" value="Update">
+    </form>
+    <pre id="output"></pre>
+    <input type='button' value='Copy text' onclick='copy()'>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>

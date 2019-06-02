@@ -1,0 +1,94 @@
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    background-image: url(img/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+}
+
+.top-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.top-menu li {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+.top-menu li[active] {
+    background-color: black;
+    color: white;
+}
+
+main {
+    vertical-align: top;
+}
+
+main h1 {
+    text-transform: uppercase;
+}
+
+.cake-overview img {
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    .side-menu {
+        display: inline-block;
+        width: 30%;
+        margin-left: -5px;
+    }
+    main {
+        width: 70%;
+        display: inline-block;
+    }
+    .cake-overview img {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .cake-overview aside {
+        display: inline-block;
+        width: calc(70% - 37px);
+        padding: 10px;
+    }
+}
+
+label{
+    display: block;
+}
+label input{
+    width:100%;
+    max-width:300px;
+}
+label textarea{
+    width:100%;
+    resize:vertical;
+}
+
+.side-menu {
+    padding: 10px;
+}
+
+.side-menu>img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}

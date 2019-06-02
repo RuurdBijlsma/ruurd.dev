@@ -1,0 +1,37 @@
+<html lang='nl'>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35913371-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35913371-8');
+    </script>
+	<meta charset='utf-8' />
+	<title>Knights Tour</title>
+	<meta name='theme-color' content='#4674C7'>
+	<meta name='mobile-web-app-capable' content='yes'>
+	<link rel='icon' sizes='192x192' href='img/favicon.png'>
+	<link rel='shortcut icon' type='image/png' href='img/favicon.png'><!-- Favicon moet 192x192 zijn -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='main.css'>
+	<script type='text/javascript' src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+	<script src='Board.js' type='text/javascript'></script>
+	<script src='script.js' type='text/javascript'></script>
+</head>
+<body>
+	<div id='wrap'>
+		<p>Board size:</p>
+		<input type='number' placeholder="Board size..." onkeyup="checkKey(event)" value="8">
+		<p>Animation speed:</p>
+		<input type='number' placeholder="Animation speed..." onkeyup="animateBoard(event)" value="100">
+		<br><input type='button' id='stopAnimation' onclick="board.stopAnimation();" value="Stop animation">
+		<label><input type="checkbox" id='fullCircuit' onchange='board.fullCircuit=this.checked'><div id='circuitDesc'> Make closed path</div></label>
+	</div>
+</body>
+</html>

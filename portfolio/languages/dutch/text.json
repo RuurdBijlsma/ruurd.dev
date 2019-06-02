@@ -1,0 +1,19 @@
+{
+    "portfolio": "Portfolio",
+    "projects": "Projecten",
+    "websites": "Websites",
+    "contact": "Contact",
+    "requestLimit": "Te veel requests ontvangen",
+    "mailConfirmation": ["De mail naar", "is verzonden"],
+    "phone":"Telefoon",
+    "me": [
+        "Ik ben Ruurd Bijlsma, ik woon in Sneek. Ik ben graag bezig met hobby projecten zoals web apps of desktop apps. Ik ben al zo'n 3 jaar bezig met web development.",
+        "Ik ben creatief, ik kan zelfstandig werken en ik ben een problem solver. Ik ben informatica gaan studeren, omdat ik deze vaardigheden hier kan toepassen en verbeteren. Deze opleiding staat me ook toe om later ideeën te bedenken en om producten te ontwikkelen.",
+        "Ik heb een nadenkende leerstijl en ik vertrouw op mijn gezonde verstand. Hierdoor kan ik goede code schrijven en problemen snel oplossen op een slimme manier. Ik heb ook vaak ideeën voor leuke projecten, daarom heb ik nu een aantal projecten gemaakt als hobby, wanneer ik een leuk idee heb dat ik wil testen maak ik er een project van. Een deel van mijn projecten zijn te zien op mijn <a href='https://github.com/ruurdbijlsma'>Github</a>."
+    ],
+    "social": "Sociale Media",
+    "mail": "E-Mail",
+    "message": "Bericht",
+    "messagePlaceholder": "Type een bericht...",
+    "senderPlaceholder": "Verzender..."
+}

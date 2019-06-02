@@ -1,0 +1,118 @@
+{
+    "websites": [
+        {
+            "title": "ThreeJS Pool",
+            "tags": [
+                "js",
+                "threejs"
+            ],
+            "description": "This is a 3D game of pool made in the browser. The graphics are made using ThreeJS, the physics are manually programmed. The game is also optimized for mobile, so you can still get smooth gameplay and intuitive controls.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/PoolGame",
+                "website": "https://ruurdbijlsma.github.io/PoolGame/"
+            },
+            "image": "pool.jpg"
+        },
+        {
+            "title": "Calculator",
+            "tags": [
+                "html",
+                "css",
+                "js"
+            ],
+            "description": "A graphical calculator capable of plotting functions, plotting derivative functions and calculating regular sums. Complex numbers are also supported.",
+            "links": {
+                "website": "https://ruurd.dev/calculator"
+            },
+            "image": "calc.png"
+        },
+        {
+            "title": "CopRunner",
+            "tags": [
+                "js",
+                "threejs"
+            ],
+            "description": "A simple GTA clone where you try to escape from the cops. With procedurally generated maps, and pathfinding AI cops that try to ram you.",
+            "links": {
+                "website": "https://ruurdbijlsma.github.io/KopRunner/",
+                "github": "https://github.com/RuurdBijlsma/KopRunner"
+            },
+            "image": "coprunner.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Byzantium",
+            "tags": [
+                "c#",
+                "Unity"
+            ],
+            "description": "As part of my minor I made a real-time strategy game with two fellow students. This game features artificial intelligence and procedural map generation that creates different kinds of biomes.",
+            "links": {
+                "github": "https://github.com/jornvanwier/Byzantium"
+            },
+            "image": "byzantium.png"
+        },
+        {
+            "title": "Music Player",
+            "tags": [
+                "c#",
+                "uwp"
+            ],
+            "description": "This is a hobby project I made, because I couldn't find a good music player that fit my needs. It's made with the Universal Apps for Windows platform.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Music"
+            },
+            "image": "music.png"
+        },
+        {
+            "title": "Knight Spider",
+            "tags": [
+                "Python",
+                "Android",
+                "Robotics"
+            ],
+            "description": "As part of an interdepartmental school project, we made a robotic hexapod. By controlling 18 servos via inverse kinematics the hexapod gets lifelike fast movement. There's an accompanying app to read all the information from the Raspberry Pi and the individual servos, and to view a live stream from the hexapod's camera.",
+            "links": {
+                "blog (dutch)": "https://ruurdbijlsma.github.io/KnightSpider/",
+                "github (app)": "https://github.com/RuurdBijlsma/KnightSpider-App",
+                "github (raspberry)": "https://github.com/RuurdBijlsma/KnightSpider-MainFrame"
+            },
+            "image": "spider.jpg"
+        },
+        {
+            "title": "Hex",
+            "tags": [
+                "C++"
+            ],
+            "description": "Hex is a boardgame where two players play eachother. Both players have about 121 options each turn, and the game can last up to 120 turns. This program can play this game by using minimax with Alpha-beta pruning to find out which move is optimal. To evaluate a board position I've tried two algorithms to see which was the most accurate. Monte Carlo evaluation turned out better than my own custom made algorithm.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Hex"
+            },
+            "image": "hex.png"
+        },
+        {
+            "title": "Video Editor",
+            "tags": [
+                "js",
+                "Electron"
+            ],
+            "description": "This is a program to edit videos. It can cut, concatenate, slow/speed up and change the audio volume of videos. After editing you can export the file to a video file, or upload it directly to Youtube.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Electron-Video-Editor"
+            },
+            "image": "videoeditor.png"
+        },
+        {
+            "title": "Manual Camera",
+            "tags": [
+                "Android"
+            ],
+            "description": "This is a camera app I made for Android. The app has some manual camera controls, like manual focus, white balance, shutter speed and ISO. I made it because I couldn't find any good free manual camera apps, and it was a fun challenge.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Camera"
+            },
+            "image": "camera.png"
+        }
+    ]
+}

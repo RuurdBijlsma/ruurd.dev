@@ -1,0 +1,37 @@
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+	<title>Mastermind</title>
+	<meta name="theme-color" content="#4674C7">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"><!-- Favicon moet 192x192 zijn -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id='wrap'>
+		<div id='colors'>
+
+		</div>
+		<div id='board'>
+
+		</div>
+	</div>
+	<input type='button' id='settingsbutton' onclick='getsett()' value='Settings'>
+	<div id='settings'>
+		<h1 onclick='getsett()'>Settings</h1>
+		<div class='hr'></div>
+		<p>Columns: <input id='colrange' type='range' onmousemove='setRange()' onchange='update()' value='4' min='2' max='9' step='1'><input type='number' onkeydown='checkkey(event)' value='4'></p>
+		<div class='hr'></div>
+		<p>Rows: <input id='rowrange' type='range' onmousemove='setRange()' onchange='update()' value='12' min='1' max='30' step='1'><input type='number' onkeydown='checkkey(event)' value='12'></p>
+		<div class='hr'></div>
+		<p>Colors: <input id='klerange' type='range' onmousemove='setRange()' onchange='update()' value='6' min='2' max='8' step='1'><input type='number' onkeydown='checkkey(event)' value='6'></p>
+		<div class='hr'></div>
+		<p><input type='button' onclick='update()' value='New Game'></p>
+	</div>
+</body>
+</html>

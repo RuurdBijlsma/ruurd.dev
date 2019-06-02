@@ -1,0 +1,108 @@
+{
+    "websites": [
+        {
+            "title": "ThreeJS Pool",
+            "tags": [
+                "js",
+                "threejs"
+            ],
+            "description": "Dit is een 3D pool die je in de browser kan spelen. De graphics zijn gemaakt in ThreeJS en de physics zijn zelf geprogrammeerd. Dit spel is ook geoptimaliseert voor mobiel, waarmee je door middel van de gyroscoop kan spelen",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/PoolGame",
+                "website": "https://ruurdbijlsma.github.io/PoolGame/"
+            },
+            "image": "pool.jpg"
+        },
+        {
+            "title": "GPU Mandelbrot",
+            "tags": [
+                "html",
+                "css",
+                "js"
+            ],
+            "description": "Deze website genereert een Mandelbrot op de GPU in de browser. Er is ook support voor mobiel met drag en pinch to zoom.",
+            "links": {
+                "website": "https://ruurd.dev/gpubrot"
+            },
+            "image": "gpubrot.png"
+        },
+        {
+            "title": "CopRunner",
+            "tags": [
+                "js",
+                "threejs"
+            ],
+            "description": "Vlucht van de politie! In deze 3d simulatie wordt je achtervolgd door meerdere politie autos die je proberen te rammen, als je teveel geramd wordt verlies je.",
+            "links": {
+                "website": "https://ruurdbijlsma.github.io/KopRunner/",
+                "github": "https://github.com/RuurdBijlsma/KopRunner"
+            },
+            "image": "coprunner.jpg"
+        },
+        {
+            "title": "Emoji Camera",
+            "tags": [
+                "VUE",
+                "js"
+            ],
+            "description": "Camera app die alles in emojis rendert (snelle (mobiele) cpu en camera vereist om website te runnen)",
+            "links": {
+                "website": "https://ruurd.dev/emojicamera/"
+            },
+            "image": "emojipicture.png"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Byzantium",
+            "tags": [
+                "c#",
+                "Unity"
+            ],
+            "description": "Een realtime strategy spel waarin je een Romeins leger bestuurd. Elke eenheid heeft AI om te denken wat hij moet doen. De map wordt procedureel gegenereerd en is elke keer anders.",
+            "links": {
+                "github": "https://github.com/jornvanwier/Byzantium"
+            },
+            "image": "byzantium.png"
+        },
+        {
+            "title": "Music Player",
+            "tags": [
+                "c#",
+                "uwp"
+            ],
+            "description": "Dit is een hobby project waar ik de laatste tijd mee bezig ben geweest. Ik maak deze applicatie omdat ik vind dat er geen goede muziekspelers te krijgen zijn. Het is gemaakt als universele Windows 10 app in C#.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Music"
+            },
+            "image": "music.png"
+        },
+        {
+            "title": "Knight Spider",
+            "tags": [
+                "Python",
+                "Android",
+                "OpenCV"
+            ],
+            "description": "Robot hexapod die met computer vision verschillende objecten kan herkennen. De Raspberry Pi stuurt 18 servos aan door middel van inverse kinematica om een vloeiende loopbeweging te maken. Er is ook een bijbehorende app ontwikkeld waarin een livestrean van de robot en alle diagnostische informatie van de servos en de raspberry te zien is.",
+            "links": {
+                "blog": "https://ruurdbijlsma.github.io/KnightSpider/",
+                "github (app)": "https://github.com/RuurdBijlsma/KnightSpider-App",
+                "github (raspberry)": "https://github.com/RuurdBijlsma/KnightSpider-MainFrame"
+            },
+            "image": "spider.jpg"
+        },
+        {
+            "title": "Hex",
+            "tags": [
+                "C++",
+                "Win32"
+            ],
+            "description": "Hex is een opdracht voor algoritmiek, het doel was om een programma te maken dat zelf het spel hex kan spelen. Ik heb gebruik gemaakt van minimax met Alpha-beta pruning om uit te zoeken welke zet hij moet maken en ik heb 2 verschillende eval algoritmes geïmplementeerd.",
+            "links": {
+                "github": "https://github.com/RuurdBijlsma/Hex"
+            },
+            "image": "hex.png"
+        }
+    ]
+}

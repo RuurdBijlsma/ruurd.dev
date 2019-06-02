@@ -1,0 +1,172 @@
+<html lang="nl">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35913371-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35913371-8');
+    </script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ 	<meta name="mobile-web-app-capable" content="yes">
+ 	<link rel="icon" sizes="192x192" href="img/icon.png">
+	<meta name="theme-color" content="rgb(8, 244, 190)">
+	<title id='title' id='titel'>Calculator</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjs/1.0.1/math.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body onkeyup='checkKey(event)'>
+	<div id='display'>
+		<canvas id='cGRID' class='c' width='700' height='400'></canvas>
+		<canvas id='cBG' class='c' width='700' height='400'></canvas>
+		<canvas id='c1' class='c' width='700' height='400'></canvas>
+		<canvas id='c2' class='c' width='700' height='400'></canvas>
+		<canvas id='c3' class='c' width='700' height='400'></canvas>
+		<canvas id='c4' class='c' width='700' height='400'></canvas>
+		<canvas id='c5' class='c' width='700' height='400'></canvas>
+		<canvas id='c6' class='c' width='700' height='400'></canvas>
+		<canvas id='c7' class='c' width='700' height='400'></canvas>
+		<canvas id='c8' class='c' width='700' height='400'></canvas>
+		<canvas id='c9' class='c' width='700' height='400'></canvas>
+		<canvas id='c10' class='c' width='700' height='400'></canvas>
+		<canvas id='cLOAD' class='c' width='700' height='400'></canvas>
+		<div id='output'>
+			<ul>
+			</ul>
+		</div>
+	</div>
+	<div id='controls'>
+		<input type='text' placeholder='input' id='input'>
+		<div id='buttons'>
+			<input type='submit' onclick='functionWindow()' value='Y='>
+			<input type='submit' onclick='up()' value='↑' sym='ja'>
+			<input type='submit' value='2ND'>
+			<input type='submit' value='INS'>
+			<input type='button' value='('>
+			<input type='button' value=')'>
+			<input type='button' value='^' sym='ja'>
+			<input type='submit' onclick='clearall()' value='C' sym='ja'>
+			<input type='submit' onclick='backspace()' value='⇚' sym='ja'>
+			<input type='button' value='÷' sym='ja'>
+			<input type='submit' value='←' sym='ja'>
+			<input type='submit' onclick='OK()' value='OK' sym='ja'>
+			<input type='submit' value='→' sym='ja'>
+			<input type='submit' onclick='changeAngle()' value='DEG'>
+			<input type='button' value=','>
+			<input type='button' value='SIN'>
+			<input type='button' value='7' num='ja'>
+			<input type='button' value='8' num='ja'>
+			<input type='button' value='9' num='ja'>
+			<input type='button' value='×' sym='ja'>
+			<input type='button' value='π'>
+			<input type='submit' onclick='down()' value='↓' sym='ja'>
+			<input type='button' value='23'>
+			<input type='button' value='24'>
+			<input type='button' value='25'>
+			<input type='button' value='COS'>
+			<input type='button' value='4' num='ja'>
+			<input type='button' value='5' num='ja'>
+			<input type='button' value='6' num='ja'>
+			<input type='button' value='-' sym='ja'>
+			<input type='button' value='e'>
+			<input type='button' value='X'>
+			<input type='button' value='33'>
+			<input type='button' value='34'>
+			<input type='button' value='35'>
+			<input type='button' value='TAN'>
+			<input type='button' value='1' num='ja'>
+			<input type='button' value='2' num='ja'>
+			<input type='button' value='3' num='ja'>
+			<input type='button' value='+' sym='ja'>
+			<input type='button' value='√'>
+			<input type='button' value='Y'>
+			<input type='button' value='43'>
+			<input type='button' value='44'>
+			<input type='button' value='45'>
+			<input type='button' value='LOG'>
+			<input type='button' value='0' num='ja'>
+			<input type='button' value='.' num='ja'>
+			<input type='button' value='=' sym='ja'>
+			<input type='submit' value='ENTER' onclick='run()' sym='ja'>
+		</div>
+	</div>
+	<div id='graphcontrols'>
+		<div id='butts'>
+			<header>
+				<input type='button' onclick="functionWindow()" value='⇐ BACK TO CALCULATOR'>
+			</header>
+			<div id='functions'>
+				<input type='button' onclick="openid('window')" value='WINDOW' title='Set window size'>
+				<input type='button' onclick="openid('zoom')" value='ZOOM' title='Set zoom'>
+				<input type='button' onclick='changeAngle()' value='DEG' title='Change to radians or degrees'>
+				<input type='button' onclick="openid('numpad')" value='NUMPAD' title='Show the numpad'>
+			</div>
+			<div id='window'>
+				<label>X:<br><input type='text' value='80'></label><br>
+				<label>Y:<br><input type='text' value='20'></label>
+			</div>
+			<div id='zoom'>
+				<input type='button' onclick='zoomfit()' value='Zoom Fit'>
+				<input type='button' onclick='zoomsquare()' value='Zoom Square'>
+				<input type='button' onclick='zoomstandard()' value='Zoom Standard'>
+			</div>
+			<div id='numpad'>
+				<input type='submit' onclick='toggle2ND()' value='2ND'>
+				<input type='submit' value='↑' onclick='funup()' sym='ja'>
+				<input type='submit' value='DEG' onclick='changeAngle()'>
+				<input type='button' value='X' sym='ja'>
+				<input type='button' value='(' sym='ja'>
+				<input type='button' value=')' sym='ja'>
+				<input type='button' value='^' sym='ja'><br>
+				<input type='submit' value='←' sym='ja'>
+				<input type='submit' value='OK' sym='ja'>
+				<input type='submit' value='→' sym='ja'>
+				<input type='button' value='9' num='ja'>
+				<input type='button' value='8' num='ja'>
+				<input type='button' value='7' num='ja'>
+				<input type='button' value='÷' sym='ja'><br>
+				<input type='button' value=','>
+				<input type='submit' value='↓' onclick='fundown()' sym='ja'>
+				<input type='button' value='SIN'>
+				<input type='button' value='6' num='ja'>
+				<input type='button' value='5' num='ja'>
+				<input type='button' value='4' num='ja'>
+				<input type='button' value='×' sym='ja'><br>
+				<input type='submit' value='C' onclick='clearfunction()'>
+				<input type='button' value='LOG'>
+				<input type='button' value='COS'>
+				<input type='button' value='3' num='ja'>
+				<input type='button' value='2' num='ja'>
+				<input type='button' value='1' num='ja'>
+				<input type='button' value='-' sym='ja'><br>
+				<input type='submit' value='⇚' onclick='backspacefunction()'>
+				<input type='button' value='√'>
+				<input type='button' value='TAN'>
+				<input type='button' value='0' num='ja'>
+				<input type='button' value='.' sym='ja'>
+				<input type='submit' onclick='plotall()' value='PLOT' sym='ja'>
+				<input type='button' value=' ' sym='ja'><br>
+			</div>
+		</div>
+		<div id='inputs'>
+			<div class='toggle' active='yes'>Y1</div><input type='text' placeholder='Y1 = '><div i='0' class='remove'>×</div>
+		</div>
+	</div>
+
+	<div id='message'></div>
+	<div id='gmessage'></div>
+	<div id='bol'></div>
+	<input type='text' id='hidhid'>
+
+
+</body>
+</html>

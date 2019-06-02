@@ -1,0 +1,185 @@
+:root {
+    --emoji-size: 12px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+    font-weight: 300;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+textarea{
+    height:150px;
+}
+input,
+textarea {
+    display: block;
+    font-size: 15px;
+}
+
+#controls {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    font-size: 15px;
+}
+pre div{
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+pre {
+    font-family: monospace;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+    cursor: text;
+    color:black;
+    display: inline-block;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+input[type='button'] {
+    margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+    cursor: text;
+    border: none;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+input[type='submit'] {
+    margin: 10px 0;
+}
+
+input[type='checkbox'] {
+    width: auto;
+}
+
+p {
+    margin-top: 8px;
+}
+
+.item {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block;
+    margin-right: -4px;
+    width: var(--emoji-size);
+    height: var(--emoji-size);
+    font-size: var(--emoji-size);
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+canvas {
+    width: 100%;
+    max-width: 700px;
+}
+
+html {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    height: 100%;
+    padding: 10px;
+}
+
+body {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+*:focus {
+    outline: none;
+}
+
+*:link,
+*:visited {
+    color: white;
+    text-decoration: none;
+}
+
+::-moz-selection {
+    color: white;
+    background: rgb(255, 80, 0);
+}
+
+::selection {
+    color: white;
+    background: rgb(255, 80, 0);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number] textarea {
+    cursor: text;
+}
+
+input[type='button'],
+input[type='submit'],
+a[href] {
+    cursor: pointer;
+}

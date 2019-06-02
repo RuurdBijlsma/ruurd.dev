@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+	<title id='title'>plaatjes</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<script src="snake.js" type="text/javascript"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body onkeydown="showKeyCode(event);" onload='first()' id='bod'>
+
+	<div id='snelheidklikker' onclick='slide()'>Snelheid: 20</div>
+	<div id='snelheidslider'><div id='snelheidoverlay'></div></div>
+
+
+	<div id='vier'>
+	</div>
+
+	<div id='vijf'>
+	</div>
+
+	<div id='banaan'></div>
+	<div id='appel'></div>
+	<div id='peer'></div>
+
+	<div id='score'>
+		<p>Score:</p>
+		<table border="1">
+			<tr><th></th><th>Wit</th><th>Rood</th></tr>
+			<tr><th>Kills</th>	<td id='vierkill'>0</td><td id='vijfkill'>0</td></tr>
+			<tr><th>Deaths</th>	<td id='vierdeath'>0</td><td id='vijfdeath'>0</td></tr>
+			<tr><th>Score</th>	<td id='vierscore'>0</td><td id='vijfscore'>0</td></tr>
+		</table>
+		<div id='startknop' onclick='start()'>Start</div>
+	</div>
+	<div id='splashmessage'></div>
+</body>
+</html>

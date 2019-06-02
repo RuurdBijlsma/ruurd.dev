@@ -1,0 +1,57 @@
+<html lang='nl'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35913371-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35913371-8');
+    </script>
+    <meta charset='utf-8' />
+    <title>Template</title>
+    <meta name='theme-color' content='#4674C7'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='icon' sizes='192x192' href='img/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='img/favicon.png'>
+    <!-- Favicon moet 192x192 zijn -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.0.0.min.js'></script>
+    <script src='script.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <p>Image widths (pixels)</p>
+    <textarea class="sizes" placeholder="Resolution seperated by newline or comma">71 Square71x71Logo.scale-100
+89 Square71x71Logo.scale-125
+107 Square71x71Logo.scale-150
+142 Square71x71Logo.scale-200
+284 Square71x71Logo.scale-400
+150 Square150x150Logo.scale-100
+188 Square150x150Logo.scale-125
+225 Square150x150Logo.scale-150
+300 Square150x150Logo.scale-200
+600 Square150x150Logo.scale-400
+310 Square310x310Logo.scale-100
+388 Square310x310Logo.scale-125
+465 Square310x310Logo.scale-150
+620 Square310x310Logo.scale-200
+1240 Square310x310Logo.scale-400
+44 Square44x44Logo.scale-100
+55 Square44x44Logo.scale-125
+66 Square44x44Logo.scale-150
+88 Square44x44Logo.scale-200
+176 Square44x44Logo.scale-400</textarea>
+    <br>
+    <input type='file' accept="image/*" onchange="selectFile(event)">
+    <pre class='output'></pre>
+    <div class='image-output'></div>
+</body>
+
+</html>
