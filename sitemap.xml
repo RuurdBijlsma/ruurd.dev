@@ -125,6 +125,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/pesten/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/platform/</loc>
  <changefreq>weekly</changefreq>
 </url>
