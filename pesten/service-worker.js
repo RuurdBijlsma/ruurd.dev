@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pesten/precache-manifest.72a504bedfec7211cec15e7f851d681b.js"
+  "/pesten/precache-manifest.e35765505612db1582d2bb761eaeff5c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pesten-ai"});
