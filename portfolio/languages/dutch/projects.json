@@ -6,10 +6,10 @@
                 "js",
                 "threejs"
             ],
-            "description": "Dit is een 3D pool die je in de browser kan spelen. De graphics zijn gemaakt in ThreeJS en de physics zijn zelf geprogrammeerd. Dit spel is ook geoptimaliseert voor mobiel, waarmee je door middel van de gyroscoop kan spelen",
+            "description": "Dit is een 3D lokale multiplayer pool die je in de browser kan spelen. De graphics zijn gemaakt in ThreeJS en de physics zijn zelf geprogrammeerd. Dit spel is ook geoptimaliseert voor mobiel, waarmee je door middel van de gyroscoop kan spelen",
             "links": {
-                "github": "https://github.com/RuurdBijlsma/PoolGame",
-                "website": "https://ruurdbijlsma.github.io/PoolGame/"
+                "website": "https://ruurdbijlsma.github.io/PoolGame/",
+                "github": "https://github.com/RuurdBijlsma/PoolGame"
             },
             "image": "pool.jpg"
         },
@@ -47,7 +47,8 @@
             ],
             "description": "Camera app die alles in emojis rendert (snelle (mobiele) cpu en camera vereist om website te runnen)",
             "links": {
-                "website": "https://ruurd.dev/emojicamera/"
+                "website": "https://ruurd.dev/emojicamera/",
+                "github":"https://github.com/RuurdBijlsma/emoji-camera"
             },
             "image": "emojipicture.png"
         }
@@ -71,7 +72,7 @@
                 "c#",
                 "uwp"
             ],
-            "description": "Dit is een hobby project waar ik de laatste tijd mee bezig ben geweest. Ik maak deze applicatie omdat ik vind dat er geen goede muziekspelers te krijgen zijn. Het is gemaakt als universele Windows 10 app in C#.",
+            "description": "Dit is een hobby project die ik heb gebruikt om C# en UWP te leren. Ik maakte deze applicatie destijds, omdat ik geen goede offline muziek speler kon vinden. Het is gemaakt als universele Windows 10 app in C#.",
             "links": {
                 "github": "https://github.com/RuurdBijlsma/Music"
             },
@@ -98,7 +99,7 @@
                 "C++",
                 "Win32"
             ],
-            "description": "Hex is een opdracht voor algoritmiek, het doel was om een programma te maken dat zelf het spel hex kan spelen. Ik heb gebruik gemaakt van minimax met Alpha-beta pruning om uit te zoeken welke zet hij moet maken en ik heb 2 verschillende eval algoritmes geïmplementeerd.",
+            "description": "Hex is een opdracht voor algoritmiek, het doel was om een programma te maken dat zelf het spel hex kan spelen. Ik heb gebruik gemaakt van minimax met alpha-beta pruning om uit te zoeken welke zet hij moet maken, ik heb 2 verschillende board evalution algoritmes geïmplementeerd.",
             "links": {
                 "github": "https://github.com/RuurdBijlsma/Hex"
             },

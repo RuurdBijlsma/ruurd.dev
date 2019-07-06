@@ -1,6 +1,5 @@
-:root{
+:root {
     --transition-time: 0.2s;
-
     /* Light theme */
     /* --primary-color:#22c095;
     --background-color:#eee;
@@ -12,18 +11,17 @@
     --project-background: white;
     --text-on-project-background:rgba(0,0,0,0.75);
     --switch-color:rgba(0,0,0,0.9); */
-
     /* Dark theme */
-    --primary-color:#158633;
-    --background-color:rgb(36, 36, 36);
+    --primary-color: #158633;
+    --background-color: rgb(36, 36, 36);
     --text-on-primary: white;
     --text-on-background: rgba(255, 255, 255, 0.6);
     --contact-background: #191919;
     --text-on-contact-background: white;
-    --icon-on-contact-background: rgba(0,0,0,0.7);
+    --icon-on-contact-background: rgba(0, 0, 0, 0.7);
     --project-background: rgb(17, 17, 17);
-    --text-on-project-background:rgba(255, 255, 255, 0.75);
-    --switch-color:rgba(255, 255, 255, 0.89);
+    --text-on-project-background: rgba(255, 255, 255, 0.75);
+    --switch-color: rgba(255, 255, 255, 0.89);
 }
 
 * {
@@ -39,29 +37,30 @@
     cursor: default;
 }
 
-.dark-theme-switch{
+.dark-theme-switch {
     position: fixed;
     top: 20px;
     right: 35px;
     z-index: 5;
 }
 
-.dark-theme-switch label{
+.dark-theme-switch label {
     display: inline-block;
-    border-radius:50%;
-    cursor:pointer;
-    width:20px;
-    height:20px;
-    background-color:var(--switch-color);
-    box-shadow:0px 5px 10px 0px var(-var(--text-on-background));
-    opacity:0.7;
-    transition:var(--transition-time);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: var(--switch-color);
+    box-shadow: 0px 5px 10px 0px var(-var(--text-on-background));
+    opacity: 0.7;
+    transition: var(--transition-time);
 }
-.dark-theme-switch label:hover{
+
+.dark-theme-switch label:hover {
     opacity: 1;
 }
 
-.dark-theme-switch input{
+.dark-theme-switch input {
     display: none;
 }
 
@@ -69,13 +68,11 @@
     font-size: 2em;
 }
 
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
-
-    transition:background-color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 #front-page {
@@ -83,51 +80,51 @@ html {
     top: calc(50% - 65px);
     font-size: 40px;
     transition: top 0.5s;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
-@media (max-width:450px){
-    #socialicons{
+@media (max-width:450px) {
+    #socialicons {
         transform: scale(1.5) !important;
     }
-    #bigtext{
-        transform:scale(0.5) !important;
+    #bigtext {
+        transform: scale(0.5) !important;
     }
-    #projecten-divider{
+    #projecten-divider {
         padding: 40px 0px !important;
     }
 }
-@media (max-width:550px){
-    .project-image{
+
+@media (max-width:550px) {
+    .project-image {
         height: 100% !important;
         width: 100% !important;
     }
-    .project-info{
-        width:100% !important;
+    .project-info {
+        width: 100% !important;
     }
-    #info{
+    #info {
         padding: 20px 0px !important;
     }
 }
 
-@media (max-width:660px){
-    #contact-info>div{
+@media (max-width:660px) {
+    #contact-info>div {
         display: block !important;
         width: calc(100% - 50px * 2) !important;
         margin: 50px !important;
     }
 }
 
-@media (max-width: 700px){
-    #me_irl{
+@media (max-width: 700px) {
+    #me_irl {
         display: none !important;
     }
-    #about{
-        margin:20px auto !important;
+    #about {
+        margin: 20px auto !important;
     }
-    .me-text{
-        width:calc(100% - 40px) !important;
+    .me-text {
+        width: calc(100% - 40px) !important;
     }
 }
 
@@ -149,14 +146,14 @@ html {
     }
 }
 
-#front-page h1 > div:nth-child(1) {
+#front-page h1>div:nth-child(1) {
     text-align: center;
     width: 100%;
     display: block;
     font-weight: bold;
 }
 
-#front-page h1 > div:nth-child(2) {
+#front-page h1>div:nth-child(2) {
     text-align: center;
     display: block;
     width: 100%;
@@ -170,17 +167,22 @@ html {
     font-family: roboto;
     background-color: var(--background-color);
     padding-bottom: 0px;
-    
-    transition:background-color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 #about {
     max-width: 1060px;
     margin: 100px auto;
+    display: flex;
+}
+
+.me-centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #me_irl {
-    display: inline-block;
     width: 250px;
     height: 250px;
     background-image: url(../img/ruurd_bijlsma.jpg);
@@ -191,7 +193,6 @@ html {
 }
 
 .me-text {
-    display: inline-block;
     width: calc(100% - 295px);
     padding: 0 20px;
     text-align: justify;
@@ -199,8 +200,12 @@ html {
     color: var(--text-on-background);
     position: relative;
     top: -15px;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
+}
+
+.me-text .year{
+    opacity:0.8;
+    font-weight:normal;
 }
 
 #projecten-divider {
@@ -211,8 +216,7 @@ html {
     background-color: var(--primary-color);
     margin-left: -20px;
     padding: 80px 0px;
-    
-    transition:background-color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 #projecten {
@@ -224,15 +228,13 @@ html {
     color: var(--text-on-background);
     font-size: 32px;
     margin: 15px 10px;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 .project {
     background-color: var(--project-background);
     padding: 10px;
-    
-    transition:background-color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 .project:not(:last-child) {
@@ -262,8 +264,7 @@ html {
     padding: 10px;
     color: var(--text-on-project-background);
     display: inline-block;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 .project-tags {
@@ -279,16 +280,14 @@ html {
     color: var(--text-on-primary);
     border-radius: 3px;
     margin: 0 3px;
-    
-    transition:background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 .project p {
     color: var(--text-on-project-background);
     font-size: 14px;
     padding: 10px;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 .project-links {
@@ -302,8 +301,7 @@ html {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 .all-websites {
@@ -311,13 +309,13 @@ html {
     background-color: var(--primary-color);
     color: var(--text-on-primary) !important;
     border-radius: 2px;
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     width: 200px;
     text-align: center;
     left: calc(50% - 108px);
     position: relative;
     padding: 8px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 #contact {
@@ -328,8 +326,7 @@ html {
     padding: 80px 20px;
     width: 100%;
     background-color: var(--contact-background);
-    
-    transition:background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 #contact-center>h3 {
@@ -357,14 +354,13 @@ html {
 #contact-info>div>p {
     font-size: 15px;
     color: var(--text-on-contact-background);
-    opacity:0.7;
+    opacity: 0.7;
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     -o-user-select: text;
     user-select: text;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 #contact-info>div>p>a {
@@ -374,8 +370,7 @@ html {
     -ms-user-select: text;
     -o-user-select: text;
     user-select: text;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 #contact-social-icons {
@@ -395,8 +390,7 @@ html {
     cursor: pointer;
     padding: 14px;
     transition: 0.3s;
-    
-    transition:background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 .contact-icon>i {
@@ -405,6 +399,10 @@ html {
 
 .contact-icon.gp-button:hover {
     color: #DD4B39 !important;
+}
+
+.contact-icon.gh-button:hover {
+    color: rgb(31, 31, 31) !important;
 }
 
 .contact-icon.fb-button:hover {
@@ -426,8 +424,7 @@ html {
     text-transform: uppercase;
     color: var(--text-on-background);
     margin-bottom: 10px;
-    
-    transition:color var(--transition-time);
+    transition: color var(--transition-time);
 }
 
 #sender-email {
@@ -460,8 +457,7 @@ html {
     width: 150px;
     display: block;
     cursor: pointer;
-    
-    transition:background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 #done {
@@ -473,10 +469,8 @@ html {
     width: 100%;
     display: block;
     text-align: center;
-    
-    transition:background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
-
 
 /*---Social Icons---*/
 
@@ -486,6 +480,9 @@ html {
     transform: scale(2);
     transition: 0s;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #socialicons>a {
@@ -498,17 +495,15 @@ html {
     transition: box-shadow .3s;
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-on-background);
-    opacity:0.4;
+    opacity: 0.4;
     box-shadow: inset 0px 0px 0px 14px var(--background-color);
     border-radius: 50%;
-    
-    transition:box-shadow var(--transition-time), color var(--transition-time);
+    transition: box-shadow var(--transition-time), color var(--transition-time);
 }
 
 #socialicons>a:hover {
     box-shadow: inset 0px 0px 0px 0px var(--background-color);
-    
-    transition:box-shadow var(--transition-time);
+    transition: box-shadow var(--transition-time);
 }
 
 #socialicons .bb-button:hover {
@@ -537,7 +532,6 @@ html {
     transform: translate(0.5px, 17px);
     cursor: pointer;
 }
-
 
 /*---Parallax---*/
 
@@ -571,12 +565,10 @@ a {
 
 a[href] {
     cursor: pointer;
-    color:var(--primary-color);
-    
-    transition:color var(--transition-time);
+    color: var(--primary-color);
+    transition: color var(--transition-time);
 }
 
-textarea:focus,
-input:focus {
+textarea:focus, input:focus {
     outline: none;
 }
