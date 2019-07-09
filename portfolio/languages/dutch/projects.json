@@ -74,7 +74,7 @@
             ],
             "description": "Video editor om simpel videos te knippen, twee videos samenvoegen, volume van een video aanpassen en de snelheid van een video aanpassen. Het is gemaakt met een GUI vergelijkbaar met Windows Movie Maker, om makkelijk in gebruik te zijn. Videos kunnen ook direct naar Youtube gedeelt worden.",
             "links": {
-                "github": "https://github.com/RuurdBijlsma/Music"
+                "github": "https://github.com/ruurdbijlsma/ruurd-movie-maker"
             },
             "image": "videoeditor.png"
         },
