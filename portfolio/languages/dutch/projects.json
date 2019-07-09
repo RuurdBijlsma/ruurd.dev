@@ -37,7 +37,7 @@
                 "website": "https://ruurdbijlsma.github.io/KopRunner/",
                 "github": "https://github.com/RuurdBijlsma/KopRunner"
             },
-            "image": "coprunner.jpg"
+            "image": "coprunner.png"
         },
         {
             "title": "Emoji Camera",
@@ -67,16 +67,16 @@
             "image": "byzantium.png"
         },
         {
-            "title": "Music Player",
+            "title": "Video Editor",
             "tags": [
-                "c#",
-                "uwp"
+                "JS",
+                "Electron"
             ],
-            "description": "Dit is een hobby project die ik heb gebruikt om C# en UWP te leren. Ik maakte deze applicatie destijds, omdat ik geen goede offline muziek speler kon vinden. Het is gemaakt als universele Windows 10 app in C#.",
+            "description": "Video editor om simpel videos te knippen, twee videos samenvoegen, volume van een video aanpassen en de snelheid van een video aanpassen. Het is gemaakt met een GUI vergelijkbaar met Windows Movie Maker, om makkelijk in gebruik te zijn. Videos kunnen ook direct naar Youtube gedeelt worden.",
             "links": {
                 "github": "https://github.com/RuurdBijlsma/Music"
             },
-            "image": "music.png"
+            "image": "videoeditor.png"
         },
         {
             "title": "Knight Spider",
