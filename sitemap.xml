@@ -169,6 +169,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/spectroid/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/spiderdiagnostics/</loc>
  <changefreq>weekly</changefreq>
 </url>
