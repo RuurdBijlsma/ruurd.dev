@@ -1,6 +1,6 @@
 {
-  "name": "Vuemusic 3",
-  "short_name": "Vuemusic",
+  "short_name": "Music",
+  "name": "VueMusic",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#502285",
-  "theme_color": "#3ccd79"
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
 }
