@@ -1,6 +1,6 @@
 {
-  "name": "VueMusic 3",
-  "short_name": "VueMusic",
+  "name": "Spotify",
+  "short_name": "Spotify",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
