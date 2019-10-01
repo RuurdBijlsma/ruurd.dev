@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "aa175912a6a3e2427d5a",
-    "url": "/vuemusic/css/app.51ee44c4.css"
+    "revision": "ee274e94d10f9fca09ed",
+    "url": "/vuemusic/css/app.1b1a1069.css"
   },
   {
-    "revision": "aa175912a6a3e2427d5a",
-    "url": "/vuemusic/js/app.db99d9ea.js"
+    "revision": "ee274e94d10f9fca09ed",
+    "url": "/vuemusic/js/app.6b78f7be.js"
   },
   {
     "revision": "20e36b280551f9534d1c",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/vuemusic/js/chunk-vendors.770b2303.js"
   },
   {
-    "revision": "0aef54484873158b1df5fae020c3fcf2",
+    "revision": "569238a337df5aab98640771fa6a97a0",
     "url": "/vuemusic/index.html"
   },
   {
