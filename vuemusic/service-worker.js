@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vuemusic/precache-manifest.bb2297184fe2f298a5207dba30c62dad.js"
+  "/vuemusic/precache-manifest.139b78b430bddd4e5a07f884de213407.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "vuemusic-4"});
+workbox.core.setCacheNameDetails({prefix: "vuemusic-3"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
