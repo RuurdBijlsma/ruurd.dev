@@ -109,6 +109,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/media/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/musicvisualizer/</loc>
  <changefreq>weekly</changefreq>
 </url>
