@@ -29,6 +29,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/download/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/dpichecker/</loc>
  <changefreq>weekly</changefreq>
 </url>
