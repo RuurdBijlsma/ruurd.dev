@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spoopify/css/about.e6e3f148.css"
   },
   {
-    "revision": "b345500041b578d38303",
+    "revision": "0047ca0af6cc8e46acd0",
     "url": "/spoopify/css/app.21337ba2.css"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spoopify/img/notfound.png"
   },
   {
-    "revision": "21dfc601a0af633f2cfb87fe0573b8d8",
+    "revision": "bf72eee6f14a85cd0acab137a20a385c",
     "url": "/spoopify/index.html"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spoopify/js/about.f6641cad.js"
   },
   {
-    "revision": "b345500041b578d38303",
-    "url": "/spoopify/js/app.dd981544.js"
+    "revision": "0047ca0af6cc8e46acd0",
+    "url": "/spoopify/js/app.42426cac.js"
   },
   {
     "revision": "841a15cde12f8c9098e1",
