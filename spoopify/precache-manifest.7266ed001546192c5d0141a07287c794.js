@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7efce5c69e77dd5b6ff2",
-    "url": "/spoopify/css/about.44776b14.css"
+    "revision": "fd0562d6ce74ef95e9d5",
+    "url": "/spoopify/css/about.c8444fa1.css"
   },
   {
-    "revision": "22138933459ca3a6a61e",
+    "revision": "4b7d43a19a0f537db714",
     "url": "/spoopify/css/app.684ada05.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spoopify/img/notfound.png"
   },
   {
-    "revision": "0b816eedddab65da49c44432c19da6a0",
+    "revision": "6f47885615351af146cb83fb10e66e9a",
     "url": "/spoopify/index.html"
   },
   {
-    "revision": "7efce5c69e77dd5b6ff2",
-    "url": "/spoopify/js/about.5b25debb.js"
+    "revision": "fd0562d6ce74ef95e9d5",
+    "url": "/spoopify/js/about.b67b975e.js"
   },
   {
-    "revision": "22138933459ca3a6a61e",
-    "url": "/spoopify/js/app.256ba58a.js"
+    "revision": "4b7d43a19a0f537db714",
+    "url": "/spoopify/js/app.7e19645b.js"
   },
   {
     "revision": "302e67ce4d5ef3e7ca0e",
