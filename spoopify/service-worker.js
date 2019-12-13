@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spoopify/precache-manifest.cd545449d14a97b4a9ed14adbd34162d.js"
+  "/spoopify/precache-manifest.a4594681ad934c3d2b74889648cbc5f1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "spoopify"});
