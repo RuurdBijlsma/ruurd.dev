@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e965aed7edc02a81d0a2",
-    "url": "/spoopify/css/about.eae68d73.css"
+    "revision": "7efce5c69e77dd5b6ff2",
+    "url": "/spoopify/css/about.44776b14.css"
   },
   {
-    "revision": "a167e929093733af0f54",
+    "revision": "22138933459ca3a6a61e",
     "url": "/spoopify/css/app.684ada05.css"
   },
   {
@@ -16,23 +16,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spoopify/img/notfound.png"
   },
   {
-    "revision": "fd1540370342a759eda963d82a804004",
+    "revision": "0b816eedddab65da49c44432c19da6a0",
     "url": "/spoopify/index.html"
   },
   {
-    "revision": "e965aed7edc02a81d0a2",
-    "url": "/spoopify/js/about.69e72240.js"
+    "revision": "7efce5c69e77dd5b6ff2",
+    "url": "/spoopify/js/about.5b25debb.js"
   },
   {
-    "revision": "a167e929093733af0f54",
-    "url": "/spoopify/js/app.e3fb70f5.js"
+    "revision": "22138933459ca3a6a61e",
+    "url": "/spoopify/js/app.256ba58a.js"
   },
   {
     "revision": "302e67ce4d5ef3e7ca0e",
     "url": "/spoopify/js/chunk-vendors.f66ad7dd.js"
   },
   {
-    "revision": "ec63a3eea4e7f6109fab4312faa3c46c",
+    "revision": "66f307be2b1927cde01b27f5ad73a085",
     "url": "/spoopify/manifest.json"
   },
   {
