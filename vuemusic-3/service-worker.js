@@ -11,19 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/spoopify/precache-manifest.7266ed001546192c5d0141a07287c794.js"
+  "/vuemusic/precache-manifest.ced55426f5bf59c48c8c554c7c68c3c6.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "spoopify"});
-
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+workbox.core.setCacheNameDetails({prefix: "vuemusic-3"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -31,4 +25,5 @@ self.addEventListener('message', (event) => {
  * See https://goo.gl/S9QRab
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

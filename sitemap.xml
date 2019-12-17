@@ -189,10 +189,6 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>https://ruurd.dev/spoopify/</loc>
- <changefreq>weekly</changefreq>
-</url>
-<url>
  <loc>https://ruurd.dev/tanks/</loc>
  <changefreq>weekly</changefreq>
 </url>
@@ -222,6 +218,10 @@
 </url>
 <url>
  <loc>https://ruurd.dev/vuemusic/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://ruurd.dev/vuemusic-3/</loc>
  <changefreq>weekly</changefreq>
 </url>
 <url>
