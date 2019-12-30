@@ -73,14 +73,19 @@ class Api {
         for (let prop in data)
             link += prop + `=${data[prop]}&`;
         //link = 'get.php?url=' + link.substr(0, link.length - 1);
-        link = 'get.php?url=' + encodeURIComponent(link + 'format=json_extended');
+        link = 'https://ruurd.dev:3000/proxy?url=' + encodeURIComponent(link + 'format=json_extended');
 
         console.log({ link });
         return new Promise(function (resolve) {
             fetch(link).then(response => {
                 response.text().then(result => {
                     console.log({ result });
-                    resolve(JSON.parse(result));
+                    if (result)
+                        resolve(JSON.parse(result));
+                    else{
+                        console.warn("Result is emtpy")
+                        resolve('');
+                    }
                 });
             });
         });

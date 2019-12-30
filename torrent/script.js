@@ -8,7 +8,7 @@ function init() {
     if (!localStorage.magnets)
         localStorage.magnets = JSON.stringify([]);
     magnets = JSON.parse(localStorage.magnets);
-    api.onToken = function() {
+    api.onToken = function () {
         //api.search('the flash').then(d => console.log(d));
 
         if (location.hash)
@@ -20,12 +20,18 @@ function init() {
 }
 
 function searchFromHash() {
-    let searchTerm = location.hash.substr(1);
-    searchTorrent(searchTerm, true);
+    let searchTerm = decodeURIComponent(location.hash.substr(1));
+    console.log('jo')
     $('#search').val(searchTerm);
+    setTimeout(() => {
+        searchTorrent(searchTerm, true);
+    }, 200);
 }
 
-showSearch = e => searchTorrent(e.target.value);
+showSearch = e => {
+    if (e.key === 'Enter')
+        searchTorrent(e.target.value);
+}
 
 function searchTorrent(query, fromHash = false) {
     title.innerText = 'Search: ' + query;
@@ -40,7 +46,7 @@ function searchTorrent(query, fromHash = false) {
     torrentsElement.css('top', '60px');
     torrentsElement.html('');
 
-    api.search(query).then(function(list) {
+    api.search(query).then(function (list) {
         let html = '',
             highestSeason = -Infinity,
             highestEpisode = -Infinity;
@@ -81,7 +87,7 @@ function searchTorrent(query, fromHash = false) {
                         highestEpisode = episodeNum;
                 }
 
-                html += `<div episode='${episodeNumber?episodeNumber:'none'}' class='torrent' hd='${HD}' style="${HD&&'background-color: rgba(0,128,0,0.25)'}">
+                html += `<div episode='${episodeNumber ? episodeNumber : 'none'}' class='torrent' hd='${HD}' style="${HD && 'background-color: rgba(0,128,0,0.25)'}">
                         <i class="fa fa-${category}" aria-hidden="true"></i>
                         <div class='torrent-title'>${torrent.title.replace(/\./gi, ' ')}</div>
                         <a onclick="setMagnetVisited('${torrent.download}')" class='magnet' href='${torrent.download}'><i class="fa fa-magnet" aria-hidden="true"></i></a>
@@ -136,7 +142,7 @@ function bytesToSize(bytes) {
 }
 
 function processImdb(query) {
-    api.searchImdb(query).then(function(list) {
+    api.searchImdb(query).then(function (list) {
         let series = {};
         for (let result of list) {
             let torrent = result.torrent,
