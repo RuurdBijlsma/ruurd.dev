@@ -189,6 +189,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/status/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/tanks/</loc>
  <changefreq>weekly</changefreq>
 </url>
