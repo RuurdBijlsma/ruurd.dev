@@ -73,7 +73,7 @@ class Api {
         for (let prop in data)
             link += prop + `=${data[prop]}&`;
         //link = 'get.php?url=' + link.substr(0, link.length - 1);
-        link = 'https://ruurd.dev:3000/proxy?url=' + encodeURIComponent(link + 'format=json_extended');
+        link = 'https://api.ruurd.dev/proxy?url=' + encodeURIComponent(link + 'format=json_extended');
 
         console.log({ link });
         return new Promise(function (resolve) {

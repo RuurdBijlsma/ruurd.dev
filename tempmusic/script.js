@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', init, false);
 const user = 1;
-const server = 'https://rtc.ruurd.dev:3000';
+const server = 'https://api.ruurd.dev';
 
 async function init() {
     fs = FileStorage.instance;
