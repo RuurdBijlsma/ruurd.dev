@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vuemusic/precache-manifest.f5a07feea92807678168463021a01b72.js"
+  "/status/precache-manifest.99b379d11b5ef6252cb99cb72b92a27a.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "vuemusic"});
+workbox.core.setCacheNameDetails({prefix: "live-status"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
