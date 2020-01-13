@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a0a32e313b5fe25a539",
+    "revision": "d8e29294440999c38123",
     "url": "/vuemusic/css/about.20f4247a.css"
   },
   {
-    "revision": "20fb6ed2fae39787c79d",
-    "url": "/vuemusic/css/app.e760167e.css"
+    "revision": "61e31a66594b17e25cc3",
+    "url": "/vuemusic/css/app.b544e6cc.css"
   },
   {
     "revision": "3090e6df23c213c93bf8",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/recommendation.png"
   },
   {
-    "revision": "c325d1f8af811c589f2e4129b5f86972",
+    "revision": "7d44b96102e2d40800e12a120eb9ecda",
     "url": "/vuemusic/index.html"
   },
   {
-    "revision": "9a0a32e313b5fe25a539",
-    "url": "/vuemusic/js/about.30aa0b09.js"
+    "revision": "d8e29294440999c38123",
+    "url": "/vuemusic/js/about.1e2cc766.js"
   },
   {
-    "revision": "20fb6ed2fae39787c79d",
-    "url": "/vuemusic/js/app.cd792d4f.js"
+    "revision": "61e31a66594b17e25cc3",
+    "url": "/vuemusic/js/app.9c3dfc25.js"
   },
   {
     "revision": "3090e6df23c213c93bf8",
