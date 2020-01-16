@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/css/about.20f4247a.css"
   },
   {
-    "revision": "6d3edc018e698a55b05f",
-    "url": "/vuemusic/css/app.14931187.css"
+    "revision": "0cbd0de878f9977b14a6",
+    "url": "/vuemusic/css/app.5ef44550.css"
   },
   {
     "revision": "3090e6df23c213c93bf8",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/recommendation.png"
   },
   {
-    "revision": "34e1cee90056c1bf80b79b0dd1e1feac",
+    "revision": "b18d1efade9ffd11ff04d53152c77b63",
     "url": "/vuemusic/index.html"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/js/about.1e2cc766.js"
   },
   {
-    "revision": "6d3edc018e698a55b05f",
-    "url": "/vuemusic/js/app.354f773a.js"
+    "revision": "0cbd0de878f9977b14a6",
+    "url": "/vuemusic/js/app.ff762cec.js"
   },
   {
     "revision": "3090e6df23c213c93bf8",
