@@ -19,13 +19,20 @@ function init() {
     window.addEventListener('hashchange', () => searchFromHash());
 }
 
-function searchFromHash() {
+function searchFromHash(delay = 200) {
     let searchTerm = decodeURIComponent(location.hash.substr(1));
     console.log('jo')
     $('#search').val(searchTerm);
-    setTimeout(() => {
-        searchTorrent(searchTerm, true);
-    }, 200);
+    setTimeout(async () => {
+        await searchTorrent(searchTerm, true);
+        let result = document.querySelector('#torrents').innerText;
+        console.log({ result })
+        if (result === 'No torrents found') {
+            let newDelay = delay + (delay / 10) ** 2;
+            console.log("Trying again in ", newDelay, "ms")
+            searchFromHash(newDelay);
+        }
+    }, delay);
 }
 
 showSearch = e => {
@@ -33,7 +40,7 @@ showSearch = e => {
         searchTorrent(e.target.value);
 }
 
-function searchTorrent(query, fromHash = false) {
+async function searchTorrent(query, fromHash = false) {
     title.innerText = 'Search: ' + query;
 
     if (!fromHash)
@@ -46,48 +53,48 @@ function searchTorrent(query, fromHash = false) {
     torrentsElement.css('top', '60px');
     torrentsElement.html('');
 
-    api.search(query).then(function (list) {
-        let html = '',
-            highestSeason = -Infinity,
-            highestEpisode = -Infinity;
-        if (list && list[Symbol.iterator]) {
-            for (let torrent of list) {
-                if (torrent.category.toLowerCase().includes('tv'))
-                    category = 'television';
-                if (torrent.category.toLowerCase().includes('movie'))
-                    category = 'film';
+    let list = await api.search(query);
+    let html = '',
+        highestSeason = -Infinity,
+        highestEpisode = -Infinity;
+    if (list && list[Symbol.iterator]) {
+        for (let torrent of list) {
+            if (torrent.category.toLowerCase().includes('tv'))
+                category = 'television';
+            if (torrent.category.toLowerCase().includes('movie'))
+                category = 'film';
 
-                let size = bytesToSize(torrent.size),
-                    HD = torrent.title.includes('1080'),
-                    episodeNumber, seasonNum, episodeNum,
-                    date = torrent.pubdate.split(' ')[0].substr(5).split('-').reverse().join("/");
-                console.log(date);
-                if (torrent.episode_info === undefined || torrent.episode_info === null || torrent.episode_info.epnum === undefined || torrent.episode_info.seasonnum === undefined) {
-                    let match = torrent.title.match(/s[0-9][0-9]e[0-9][0-9]/i);
-                    if (match) {
-                        episodeNumber = match[0];
-                        let epInfo = episodeNumber.substr(1).split('E');
-                        seasonNum = parseInt(epInfo[0]);
-                        episodeNum = parseInt(epInfo[1]);
-                    }
-                } else {
-                    seasonNum = parseInt(torrent.episode_info.seasonnum);
-                    episodeNum = parseInt(torrent.episode_info.epnum);
+            let size = bytesToSize(torrent.size),
+                HD = torrent.title.includes('1080'),
+                episodeNumber, seasonNum, episodeNum,
+                date = torrent.pubdate.split(' ')[0].substr(5).split('-').reverse().join("/");
+            console.log(date);
+            if (torrent.episode_info === undefined || torrent.episode_info === null || torrent.episode_info.epnum === undefined || torrent.episode_info.seasonnum === undefined) {
+                let match = torrent.title.match(/s[0-9][0-9]e[0-9][0-9]/i);
+                if (match) {
+                    episodeNumber = match[0];
+                    let epInfo = episodeNumber.substr(1).split('E');
+                    seasonNum = parseInt(epInfo[0]);
+                    episodeNum = parseInt(epInfo[1]);
                 }
-                if (seasonNum && episodeNum) {
-                    episodeNumber = `S${(seasonNum < 10) ? ("0" + seasonNum) : seasonNum}E${(episodeNum < 10) ? ("0" + episodeNum) : episodeNum}`;
-                    let actualEpisode = torrent.title.includes(episodeNumber);
+            } else {
+                seasonNum = parseInt(torrent.episode_info.seasonnum);
+                episodeNum = parseInt(torrent.episode_info.epnum);
+            }
+            if (seasonNum && episodeNum) {
+                episodeNumber = `S${(seasonNum < 10) ? ("0" + seasonNum) : seasonNum}E${(episodeNum < 10) ? ("0" + episodeNum) : episodeNum}`;
+                let actualEpisode = torrent.title.includes(episodeNumber);
 
-                    if (seasonNum > highestSeason && actualEpisode) {
-                        highestEpisode = -Infinity;
-                        highestSeason = seasonNum;
-                    }
-
-                    if (seasonNum === highestSeason && episodeNum > highestEpisode && actualEpisode)
-                        highestEpisode = episodeNum;
+                if (seasonNum > highestSeason && actualEpisode) {
+                    highestEpisode = -Infinity;
+                    highestSeason = seasonNum;
                 }
 
-                html += `<div episode='${episodeNumber ? episodeNumber : 'none'}' class='torrent' hd='${HD}' style="${HD && 'background-color: rgba(0,128,0,0.25)'}">
+                if (seasonNum === highestSeason && episodeNum > highestEpisode && actualEpisode)
+                    highestEpisode = episodeNum;
+            }
+
+            html += `<div episode='${episodeNumber ? episodeNumber : 'none'}' class='torrent' hd='${HD}' style="${HD && 'background-color: rgba(0,128,0,0.25)'}">
                         <i class="fa fa-${category}" aria-hidden="true"></i>
                         <div class='torrent-title'>${torrent.title.replace(/\./gi, ' ')}</div>
                         <a onclick="setMagnetVisited('${torrent.download}')" class='magnet' href='${torrent.download}'><i class="fa fa-magnet" aria-hidden="true"></i></a>
@@ -95,22 +102,21 @@ function searchTorrent(query, fromHash = false) {
                         <div title='Date uploaded' class='date'>${date}</div>
                         <div title='Size' class='size'>${size}</div>
                     </div>`;
-            }
-            torrentsElement.html(html);
-            updateMagnetVisited();
-        } else {
-            torrentsElement.html(`<div class='torrent'>No torrents found</div>`);
         }
-        let latestEpisode = `S${(highestSeason < 10) ? ("0" + highestSeason) : highestSeason}E${(highestEpisode < 10) ? ("0" + highestEpisode) : highestEpisode}`;
-        console.log(latestEpisode);
-        let bestTorrents = $(`[episode='${latestEpisode}'][hd=true]`);
-        if (bestTorrents.length > 0) {
-            bestTorrents.insertBefore($('.torrent')[0]);
-            //$('.torrent').removeAttr('style');
-            bestTorrents.css('background-color', 'rgba(0, 128, 0, 0.5)');
-        } else
-            $(`[episode='${latestEpisode}']`).css('box-shadow', 'inset 0px 0px 0px 100px rgba(0,0,128,0.25)');
-    });
+        torrentsElement.html(html);
+        updateMagnetVisited();
+    } else {
+        torrentsElement.html(`<div class='torrent'>No torrents found</div>`);
+    }
+    let latestEpisode = `S${(highestSeason < 10) ? ("0" + highestSeason) : highestSeason}E${(highestEpisode < 10) ? ("0" + highestEpisode) : highestEpisode}`;
+    console.log(latestEpisode);
+    let bestTorrents = $(`[episode='${latestEpisode}'][hd=true]`);
+    if (bestTorrents.length > 0) {
+        bestTorrents.insertBefore($('.torrent')[0]);
+        //$('.torrent').removeAttr('style');
+        bestTorrents.css('background-color', 'rgba(0, 128, 0, 0.5)');
+    } else
+        $(`[episode='${latestEpisode}']`).css('box-shadow', 'inset 0px 0px 0px 100px rgba(0,0,128,0.25)');
 }
 
 function setMagnetVisited(url) {
