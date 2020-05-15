@@ -12,7 +12,7 @@ async function init() {
 
     console.log(SkribbleBot, SkribbleDraw);
     canvas = document.querySelector('#canvasGame');
-    let { width, height } = canvas.getBoundingClientRect();
+    let rect = canvas.getBoundingClientRect();
 
     let pixels = 70000;
     let image = await SkribbleBot.getImageFromUrl('img/hamburger.jpg');
@@ -21,7 +21,7 @@ async function init() {
     let height = Math.round(width * ratio);
     let imageData = await SkribbleBot.getImageData(image, width, height);
 
-    let scale = Math.min(canvas.width / width, canvas.height / height);
+    let scale = Math.min(rect.width / width, rect.height / height);
     SkribbleDraw.setScale(scale);
 
     let worker = new Worker('skribble-colour-worker.js', { type: 'module' });
