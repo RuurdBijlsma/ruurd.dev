@@ -1,6 +1,7 @@
 import SkribbleBot from './SkribbleBot.js'
 import CustomDraw from './CustomDraw.js'
 // import cachedPaths from './cachedPaths.js';
+import hamburger from './hamburger.js';
 // let {background, paths, linePaths} = cachedPaths;
 
 document.addEventListener('DOMContentLoaded', init, false);
@@ -21,7 +22,6 @@ document.addEventListener('DOMContentLoaded', init, false);
 // skribble integration
 
 async function init() {
-
     let canvas = document.querySelector('.path-debug');
     canvas.width = 600;
     canvas.height = 600;
@@ -29,7 +29,7 @@ async function init() {
     canvas.style.height = canvas.height + 'px';
     CustomDraw.setCanvas(canvas);
     let pixels = 80000;
-    let image = await SkribbleBot.getImageFromUrl('img/hamburger.jpg');
+    let image = await SkribbleBot.getImageFromUrl(hamburger);
     let ratio = image.height / image.width;
     let width = Math.round(Math.sqrt(pixels / ratio));
     let height = Math.round(width * ratio);

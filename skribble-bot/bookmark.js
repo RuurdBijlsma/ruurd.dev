@@ -4,6 +4,7 @@
 
 import SkribbleBot from './SkribbleBot.js'
 import SkribbleDraw from './SkribbleDraw.js'
+import hamburger from './hamburger.js';
 
 init();
 
@@ -17,7 +18,7 @@ async function init() {
     let pixels = 70000;
     SkribbleBot.baseUrl = 'https://ruurd.dev/skribble-bot/';
     console.log(SkribbleBot.baseUrl);
-    let image = await SkribbleBot.getImageFromUrl(SkribbleBot.baseUrl + 'img/hamburger.jpg');
+    let image = await SkribbleBot.getImageFromUrl(hamburger);
     let ratio = image.height / image.width;
     let width = Math.round(Math.sqrt(pixels / ratio));
     let height = Math.round(width * ratio);
