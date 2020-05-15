@@ -391,4 +391,5 @@ class SkribbleBot {
     }
 }
 
+SkribbleBot.baseUrl = '';
 export default new SkribbleBot();
