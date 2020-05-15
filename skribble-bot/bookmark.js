@@ -27,8 +27,12 @@ async function init() {
     let scale = Math.min(rect.width / width, rect.height / height);
     SkribbleDraw.setScale(scale);
 
-    let worker = new Worker(SkribbleBot.baseUrl + 'skribble-colour-worker.js', { type: 'module' });
-    let pathWorker = new Worker(SkribbleBot.baseUrl + 'skribble-path-worker.js', { type: 'module' });
+    let colourWorkerScript = await (await fetch(SkribbleBot.baseUrl + 'skribble-colour-worker.js')).text();
+    let pathWorkerScript = await (await fetch(SkribbleBot.baseUrl + 'skribble-path-worker.js')).text();
+    let worker = new Worker('data:application/javascript,' + encodeURIComponent(colourWorkerScript),
+        { type: 'module' });
+    let pathWorker = new Worker('data:application/javascript,' + encodeURIComponent(pathWorkerScript),
+        { type: 'module' });
 
     let commands = [];
     worker.addEventListener('message', ({ data }) => {
