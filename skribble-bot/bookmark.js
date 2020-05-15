@@ -1,12 +1,13 @@
 // Code to call this: 
-// javascript:(function(){var script=document.createElement('script');script.type='module';script.src='//127.0.0.1:5500/bookmark.js';document.head.appendChild(script);})()
+
+// javascript:(function(){var script=document.createElement('script');script.type='module';script.src='//ruurd.dev/skribble-bot/bookmark.js';document.head.appendChild(script);})()
 
 import SkribbleBot from './SkribbleBot.js'
 import SkribbleDraw from './SkribbleDraw.js'
 
 init();
 
-function init() {
+async function init() {
     console.log("[HACKS INITIALIZED] Skribble hacks loaded [10/10][OPTIMIZED]");
 
     console.log(SkribbleBot, SkribbleDraw);
