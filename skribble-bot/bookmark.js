@@ -6,7 +6,6 @@ import SkribbleBot from './SkribbleBot.js'
 import SkribbleDraw from './SkribbleDraw.js'
 
 init();
-SkribbleBot.baseUrl = 'https://ruurd.dev/skribble-bot/';
 
 async function init() {
     console.log("[HACKS INITIALIZED] Skribble hacks loaded [10/10][OPTIMIZED]");
@@ -16,6 +15,7 @@ async function init() {
     let rect = canvas.getBoundingClientRect();
 
     let pixels = 70000;
+    SkribbleBot.baseUrl = 'https://ruurd.dev/skribble-bot/';
     console.log(SkribbleBot.baseUrl);
     let image = await SkribbleBot.getImageFromUrl(SkribbleBot.baseUrl + 'img/hamburger.jpg');
     let ratio = image.height / image.width;
