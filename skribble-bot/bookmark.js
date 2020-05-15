@@ -15,7 +15,7 @@ async function init() {
     let rect = canvas.getBoundingClientRect();
 
     let pixels = 70000;
-    let image = await SkribbleBot.getImageFromUrl('img/hamburger.jpg');
+    let image = await SkribbleBot.getImageFromUrl('./img/hamburger.jpg');
     let ratio = image.height / image.width;
     let width = Math.round(Math.sqrt(pixels / ratio));
     let height = Math.round(width * ratio);
@@ -24,8 +24,8 @@ async function init() {
     let scale = Math.min(rect.width / width, rect.height / height);
     SkribbleDraw.setScale(scale);
 
-    let worker = new Worker('skribble-colour-worker.js', { type: 'module' });
-    let pathWorker = new Worker('skribble-path-worker.js', { type: 'module' });
+    let worker = new Worker('./skribble-colour-worker.js', { type: 'module' });
+    let pathWorker = new Worker('./skribble-path-worker.js', { type: 'module' });
 
     let commands = [];
     worker.addEventListener('message', ({ data }) => {
