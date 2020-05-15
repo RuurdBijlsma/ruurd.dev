@@ -34,6 +34,7 @@ class CustomDraw extends IDraw {
     }
 
     async moveBrush(path) {
+        let canvas = document.querySelector('#canvasGame');
         let { x, y } = canvas.getBoundingClientRect();
 
         for (let i = 0; i < path.length; i++) {

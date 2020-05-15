@@ -11,7 +11,7 @@ async function init() {
     console.log("[HACKS INITIALIZED] Skribble hacks loaded [10/10][OPTIMIZED]");
 
     console.log(SkribbleBot, SkribbleDraw);
-    canvas = document.querySelector('#canvasGame');
+    let canvas = document.querySelector('#canvasGame');
     let rect = canvas.getBoundingClientRect();
 
     let pixels = 70000;
