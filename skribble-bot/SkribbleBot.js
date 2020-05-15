@@ -293,7 +293,7 @@ class SkribbleBot {
 
     async imageDataToCannyData(contextImage) {
         return new Promise(resolve => {
-            let worker = new Worker('./lib/canny-worker.js');
+            let worker = new Worker(SkribbleBot.baseUrl + './lib/canny-worker.js');
             worker.addEventListener('message', e => {
                 if (e.data.type === 'gradientMagnitude')
                     resolve(e.data.data);
