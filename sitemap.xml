@@ -5,6 +5,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/aoc-test/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/automaton/</loc>
  <changefreq>weekly</changefreq>
 </url>
