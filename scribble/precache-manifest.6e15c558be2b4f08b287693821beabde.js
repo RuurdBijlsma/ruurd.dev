@@ -1,11 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d826f88640556b23f805",
-    "url": "/scribble/css/app.7a126d54.css"
+    "revision": "bf34117bc2c20260a26c",
+    "url": "/scribble/css/app.a06d1970.css"
   },
   {
-    "revision": "c57baee40e919a279eb9",
-    "url": "/scribble/css/chunk-4582a88e.8158a702.css"
+    "revision": "5f1c047fb2bc8bb05255",
+    "url": "/scribble/css/chunk-339b0d52.0415846b.css"
+  },
+  {
+    "revision": "7fe4806b2db7d8ff4335",
+    "url": "/scribble/css/chunk-e20770ce.ed1d898f.css"
   },
   {
     "revision": "a4ac26ac3f63a99638b9",
@@ -28,16 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribble/img/trash.b6f2bd7b.png"
   },
   {
-    "revision": "478512373704b101626da91a4b957d6e",
+    "revision": "05714e91ff8dc8f7e3e6128f392f7291",
     "url": "/scribble/index.html"
   },
   {
-    "revision": "d826f88640556b23f805",
-    "url": "/scribble/js/app.f7e3ce5a.js"
+    "revision": "bf34117bc2c20260a26c",
+    "url": "/scribble/js/app.e6d3b684.js"
   },
   {
-    "revision": "c57baee40e919a279eb9",
-    "url": "/scribble/js/chunk-4582a88e.dcfeb225.js"
+    "revision": "5f1c047fb2bc8bb05255",
+    "url": "/scribble/js/chunk-339b0d52.66f29107.js"
+  },
+  {
+    "revision": "7fe4806b2db7d8ff4335",
+    "url": "/scribble/js/chunk-e20770ce.f040b3e4.js"
   },
   {
     "revision": "a4ac26ac3f63a99638b9",
