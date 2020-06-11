@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0bb3c5350811c66e444",
+    "revision": "3adbc82afe8bc51b68a3",
     "url": "/scribble/css/app.7eb95682.css"
+  },
+  {
+    "revision": "bbfa9a684be677f7baec",
+    "url": "/scribble/css/chunk-0a7a46ba.cba38401.css"
   },
   {
     "revision": "be5923c99e53ad4ebf65",
     "url": "/scribble/css/chunk-101f0fbb.ed1d898f.css"
   },
   {
-    "revision": "8aa34f48e2635630ab8c",
-    "url": "/scribble/css/chunk-4731c2b0.9a3d6810.css"
-  },
-  {
-    "revision": "2a9845c1f65e12b2b203",
+    "revision": "9294d856051b7bbea59e",
     "url": "/scribble/css/chunk-vendors.71fcd87a.css"
   },
   {
@@ -36,24 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribble/img/trash.b6f2bd7b.png"
   },
   {
-    "revision": "5944ab15800782b9c14dec2f6aa16b49",
+    "revision": "667dab405c0c5d22e98e16bc48a5f07f",
     "url": "/scribble/index.html"
   },
   {
-    "revision": "f0bb3c5350811c66e444",
-    "url": "/scribble/js/app.b18376c8.js"
+    "revision": "3adbc82afe8bc51b68a3",
+    "url": "/scribble/js/app.017d10d2.js"
+  },
+  {
+    "revision": "bbfa9a684be677f7baec",
+    "url": "/scribble/js/chunk-0a7a46ba.639ce792.js"
   },
   {
     "revision": "be5923c99e53ad4ebf65",
     "url": "/scribble/js/chunk-101f0fbb.67158aab.js"
   },
   {
-    "revision": "8aa34f48e2635630ab8c",
-    "url": "/scribble/js/chunk-4731c2b0.19164387.js"
-  },
-  {
-    "revision": "2a9845c1f65e12b2b203",
-    "url": "/scribble/js/chunk-vendors.761d4ee7.js"
+    "revision": "9294d856051b7bbea59e",
+    "url": "/scribble/js/chunk-vendors.7f200b4e.js"
   },
   {
     "revision": "61ba36f910bc409d726e8662aab98d55",
@@ -62,5 +62,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/scribble/robots.txt"
+  },
+  {
+    "revision": "508b54f7bc9cd110eb686ac13b7a0085",
+    "url": "/scribble/sounds/correct.ogg"
+  },
+  {
+    "revision": "cc1a7cab42415fc4a072d27d4747e585",
+    "url": "/scribble/sounds/helaas.ogg"
+  },
+  {
+    "revision": "a169e6ffbe62fa6431991b56e0ffb622",
+    "url": "/scribble/sounds/hoera.ogg"
   }
 ]);
