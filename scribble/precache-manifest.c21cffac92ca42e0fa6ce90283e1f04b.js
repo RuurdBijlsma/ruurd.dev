@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribble/img/trash.b6f2bd7b.png"
   },
   {
-    "revision": "3e3c10de1adac040cc5735dac3f26670",
+    "revision": "8e1b6adc20ee3d97402970d0f0cf30fb",
     "url": "/scribble/index.html"
   },
   {
