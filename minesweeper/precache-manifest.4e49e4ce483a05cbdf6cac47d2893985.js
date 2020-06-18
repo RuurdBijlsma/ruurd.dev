@@ -68,7 +68,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minesweeper/js/chunk-vendors.0b0ce6cc.js"
   },
   {
-    "revision": "c9b6b88bf8d6d3d168238aa5ac086a3d",
+    "revision": "0c1b119fbbc263038e3df0640d8fe272",
     "url": "/minesweeper/manifest.json"
   },
   {
