@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f87db69b1c5a0f9a5a96",
-    "url": "/minesweeper/css/app.030fd3ad.css"
+    "revision": "97af4d705b24ffd4c7ed",
+    "url": "/minesweeper/css/app.56dfb7c0.css"
   },
   {
     "revision": "ef954bf54b46372d1bf1",
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minesweeper/img/flag.png"
   },
   {
-    "revision": "01b24ffb7e24dbf198e958e693b5d001",
+    "revision": "81f0137cbc7ffe151f1bedefcf353460",
     "url": "/minesweeper/index.html"
   },
   {
-    "revision": "f87db69b1c5a0f9a5a96",
-    "url": "/minesweeper/js/app.b5c5e3a4.js"
+    "revision": "97af4d705b24ffd4c7ed",
+    "url": "/minesweeper/js/app.a89cc726.js"
   },
   {
     "revision": "3ae0b826089c84cc6735",
