@@ -62,5 +62,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "735ab4f94fbcd57074377afca324c813",
     "url": "/scribble/robots.txt"
+  },
+  {
+    "revision": "42b78bebaa1beae443c83ee949b7d7fd",
+    "url": "/scribble/sounds/game/correct.mp3"
+  },
+  {
+    "revision": "6b46dda4dfcb9c7638db27e1cf902b46",
+    "url": "/scribble/sounds/game/gameend.mp3"
+  },
+  {
+    "revision": "e14b8a3c96964dddaebdaa1d81af375f",
+    "url": "/scribble/sounds/game/timeup.mp3"
   }
 ]);

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/scribble/precache-manifest.518bc41b639533036b46b4783d39cc72.js"
+  "/scribble/precache-manifest.c17ef0949663cad933a33a90fcd649ce.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "scribble"});
