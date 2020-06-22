@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a87edf11b0a262a49dc",
-    "url": "/minesweeper/css/app.56f974db.css"
+    "revision": "907455ea3ae921a9003f",
+    "url": "/minesweeper/css/app.ac46dd55.css"
   },
   {
-    "revision": "ef954bf54b46372d1bf1",
+    "revision": "ef444d6a96a49bb98a02",
     "url": "/minesweeper/css/chunk-vendors.f3c40a4b.css"
   },
   {
@@ -52,20 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minesweeper/img/flag.png"
   },
   {
-    "revision": "5f21c6943a8fc536edb893f89ae9bb98",
+    "revision": "7c4fe0d01dc641ec37f86513f9dc522f",
     "url": "/minesweeper/index.html"
   },
   {
-    "revision": "8a87edf11b0a262a49dc",
-    "url": "/minesweeper/js/app.01988c7f.js"
+    "revision": "907455ea3ae921a9003f",
+    "url": "/minesweeper/js/app.3183008f.js"
   },
   {
     "revision": "3ae0b826089c84cc6735",
     "url": "/minesweeper/js/chunk-2d22d746.06bdeebe.js"
   },
   {
-    "revision": "ef954bf54b46372d1bf1",
-    "url": "/minesweeper/js/chunk-vendors.0b0ce6cc.js"
+    "revision": "ef444d6a96a49bb98a02",
+    "url": "/minesweeper/js/chunk-vendors.ada4139e.js"
   },
   {
     "revision": "0c1b119fbbc263038e3df0640d8fe272",
