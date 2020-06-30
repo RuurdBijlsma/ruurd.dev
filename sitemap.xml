@@ -125,6 +125,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/mind/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/minesweeper/</loc>
  <changefreq>weekly</changefreq>
 </url>
