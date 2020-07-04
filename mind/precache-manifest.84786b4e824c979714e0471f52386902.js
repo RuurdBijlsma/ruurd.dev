@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "baee971d0ea6d95226d4",
+    "revision": "6032fe124add3f534ce8",
     "url": "/mind/css/app.d97dca6f.css"
   },
   {
-    "revision": "321f475e4e8bbe366f73",
-    "url": "/mind/css/chunk-72f62960.cd0ea64a.css"
+    "revision": "b99911d2732268c52d62",
+    "url": "/mind/css/chunk-5f1c332c.15c527a2.css"
   },
   {
     "revision": "73df2335e996bf4e5b58",
@@ -20,23 +20,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mind/img/card-background.8d03df8f.png"
   },
   {
-    "revision": "a74efa020699f71023e8b8b9176fd0e1",
+    "revision": "115a384175cbb2b52d1e5402e39dd773",
+    "url": "/mind/img/favicon.png"
+  },
+  {
+    "revision": "94a2c8a5d09239094ada2df126ddefa4",
     "url": "/mind/index.html"
   },
   {
-    "revision": "baee971d0ea6d95226d4",
-    "url": "/mind/js/app.11a012d9.js"
+    "revision": "6032fe124add3f534ce8",
+    "url": "/mind/js/app.36c7d3d8.js"
   },
   {
-    "revision": "321f475e4e8bbe366f73",
-    "url": "/mind/js/chunk-72f62960.517a0da9.js"
+    "revision": "b99911d2732268c52d62",
+    "url": "/mind/js/chunk-5f1c332c.21f47fb4.js"
   },
   {
     "revision": "73df2335e996bf4e5b58",
     "url": "/mind/js/chunk-vendors.25b52ab1.js"
   },
   {
-    "revision": "bcd90bc9c10b5e068715005d4a4ad3a7",
+    "revision": "ea0f74bb2a610e84268df8f3c607e26d",
     "url": "/mind/manifest.json"
   },
   {
