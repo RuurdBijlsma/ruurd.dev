@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2ebae5b44539780929d3",
-    "url": "/peercord/css/app.ccfc732a.css"
+    "revision": "28053d9f698ef5a93f96",
+    "url": "/peercord/css/app.9ba60a48.css"
   },
   {
-    "revision": "2ebae5b44539780929d3",
-    "url": "/peercord/js/app.11e4db8a.js"
+    "revision": "28053d9f698ef5a93f96",
+    "url": "/peercord/js/app.322f7ff6.js"
   },
   {
     "revision": "a6a1b81695035330850a",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/peercord/js/chunk-vendors.d9003a94.js"
   },
   {
-    "revision": "d8c9fedc104dc96cbebac46b6272039b",
+    "revision": "08888e160c1e221d953f41fca5e3dd24",
     "url": "/peercord/index.html"
   },
   {
