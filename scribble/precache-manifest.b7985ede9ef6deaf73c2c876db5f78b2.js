@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcc18624d18a49b84613",
-    "url": "/scribble/css/app.878a855b.css"
+    "revision": "362d29bf2116aee28b55",
+    "url": "/scribble/css/app.b69c4245.css"
   },
   {
     "revision": "1355c37835508be95074",
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribble/img/trash.b6f2bd7b.png"
   },
   {
-    "revision": "dc51102d340010c1836a480d67ccbc41",
+    "revision": "4ab74b8149fc4a7f824f2741c6dae44a",
     "url": "/scribble/index.html"
   },
   {
-    "revision": "fcc18624d18a49b84613",
-    "url": "/scribble/js/app.e981b36b.js"
+    "revision": "362d29bf2116aee28b55",
+    "url": "/scribble/js/app.fdae29fc.js"
   },
   {
     "revision": "1355c37835508be95074",
