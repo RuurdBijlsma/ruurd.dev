@@ -6,5 +6,5 @@ https://github.com/sindresorhus/devtools-detect
 By Sindre Sorhus
 MIT License
 */
-(function(){"use strict";const t={isOpen:!1,orientation:void 0},a=160,r=(e,t)=>{window.dispatchEvent(new CustomEvent("devtoolschange",{detail:{isOpen:e,orientation:t}}))};setInterval(()=>{const e=window.outerWidth-window.innerWidth>a,o=window.outerHeight-window.innerHeight>a,n=e?"vertical":"horizontal";o&&e||!(window.Firebug&&window.Firebug.chrome&&window.Firebug.chrome.isInitialized||e||o)?(t.isOpen&&r(!1,void 0),t.isOpen=!1,t.orientation=void 0):(t.isOpen&&t.orientation===n||r(!0,n),t.isOpen=!0,t.orientation=n)},500),e.exports?e.exports=t:window.devtools=t})()}}]);
-//# sourceMappingURL=chunk-cd992bde.7b7bf881.js.map
+(function(){"use strict";const t={isOpen:!1,orientation:void 0},a=160,r=(e,t)=>{window.dispatchEvent(new CustomEvent("devtoolschange",{detail:{isOpen:e,orientation:t}}))},o=({emitEvents:e=!0}={})=>{const o=window.outerWidth-window.innerWidth>a,n=window.outerHeight-window.innerHeight>a,i=o?"vertical":"horizontal";n&&o||!(window.Firebug&&window.Firebug.chrome&&window.Firebug.chrome.isInitialized||o||n)?(t.isOpen&&e&&r(!1,void 0),t.isOpen=!1,t.orientation=void 0):(t.isOpen&&t.orientation===i||!e||r(!0,i),t.isOpen=!0,t.orientation=i)};o({emitEvents:!1}),setInterval(o,500),e.exports?e.exports=t:window.devtools=t})()}}]);
+//# sourceMappingURL=chunk-cd992bde.8cc52306.js.map

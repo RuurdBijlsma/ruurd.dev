@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/peercord/precache-manifest.5e014dc7f177feb050bea16f81dc7613.js"
+  "/peercord/precache-manifest.9fb3e5de332bc7bed48962a772c41275.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "discord"});
