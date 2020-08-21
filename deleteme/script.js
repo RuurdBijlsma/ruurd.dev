@@ -1,8 +1,17 @@
 document.addEventListener('DOMContentLoaded', init, false);
 
-function init() {
+async function init() {
     console.log("WEBSITE UP AND RUNNING!")
 
-    response = await fetch('https://example.com')
-    console.log(await response.text())
+    try{
+        response = await fetch('https://example.com')
+        text = await response.text();
+        console.log(text)
+        document.write(text);
+    }
+    catch(e){
+        console.error(e);
+        document.write(e.message);
+    }
+
 }
