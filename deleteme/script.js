@@ -4,7 +4,7 @@ async function init() {
     console.log("WEBSITE UP AND RUNNING!")
 
     try{
-        response = await fetch('https://example.com')
+        response = await fetch('https://example.com', {mode: 'cors'})
         text = await response.text();
         console.log(text)
         document.write(text);
