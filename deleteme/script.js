@@ -4,15 +4,15 @@ async function init() {
     console.log("WEBSITE UP AND RUNNING!")
 
     ele = document.querySelector('.content');
-    try{
-        response = await fetch('https://example.com', {mode: 'cors'})
+    try {
+        response = await fetch('https://example.com', { mode: 'cors' })
         text = await response.text();
         console.log(text)
-        ele.innerText(text);
+        ele.innerText = text;
     }
-    catch(e){
+    catch (e) {
         console.error(e);
-        ele.innerText(e.message);
+        ele.innerText = e.message;
     }
 
 }
