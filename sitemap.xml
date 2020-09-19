@@ -185,6 +185,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/redirect/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/remote/</loc>
  <changefreq>weekly</changefreq>
 </url>
@@ -250,6 +254,10 @@
 </url>
 <url>
  <loc>https://ruurd.dev/vuemusic-3/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://ruurd.dev/vuemusic-4/</loc>
  <changefreq>weekly</changefreq>
 </url>
 <url>
