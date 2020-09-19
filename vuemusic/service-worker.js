@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vuemusic/precache-manifest.35609215a43c5091734485f3b723190e.js"
+  "/vuemusic/precache-manifest.155b3ca6bffafc976437e05ff12178df.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vuemusic"});
