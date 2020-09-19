@@ -33,10 +33,6 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>https://ruurd.dev/deleteme/</loc>
- <changefreq>weekly</changefreq>
-</url>
-<url>
  <loc>https://ruurd.dev/directory/</loc>
  <changefreq>weekly</changefreq>
 </url>
@@ -182,10 +178,6 @@
 </url>
 <url>
  <loc>https://ruurd.dev/racegame/</loc>
- <changefreq>weekly</changefreq>
-</url>
-<url>
- <loc>https://ruurd.dev/redirect/</loc>
  <changefreq>weekly</changefreq>
 </url>
 <url>
