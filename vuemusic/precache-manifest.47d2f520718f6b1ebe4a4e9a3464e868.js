@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7bb629a1f5fbed8ec6e",
+    "revision": "59d8e2241b7a5af09328",
     "url": "/vuemusic/css/app.4ef12d3b.css"
   },
   {
@@ -72,24 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/css/chunk-vendors.e3ed6df7.css"
   },
   {
-    "revision": "fb76de2c2f6e22a9097d6d5f2a96a8ac",
-    "url": "/vuemusic/img/dev-icon-big.png"
-  },
-  {
-    "revision": "00160ee2281c63903d0ee4a4f5b236a7",
-    "url": "/vuemusic/img/full-black-light.png"
-  },
-  {
     "revision": "72d1edb741f26fe005a2d331b7fa14dc",
     "url": "/vuemusic/img/full-black-medium.png"
-  },
-  {
-    "revision": "62894714c7ac071b57ab6acb2236aa9e",
-    "url": "/vuemusic/img/full-black-thin.png"
-  },
-  {
-    "revision": "d36f1d9867a45a8ef430f7009ae0094d",
-    "url": "/vuemusic/img/full-black.png"
   },
   {
     "revision": "0f9cb8dc6e86425163ae2cc94a5a28ca",
@@ -98,14 +82,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0bee8916d1f0086ea1997a88bff11e96",
     "url": "/vuemusic/img/full-white-medium.png"
-  },
-  {
-    "revision": "dc462d52f2546424d9ad98b3e5a2cd5b",
-    "url": "/vuemusic/img/icon-big.png"
-  },
-  {
-    "revision": "d7e6b55ab7cdce25f18609886e47b55c",
-    "url": "/vuemusic/img/liked.png"
   },
   {
     "revision": "cd6c2368f0af8c93501dce0260fea32a",
@@ -164,10 +140,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/no-user.jpg"
   },
   {
-    "revision": "622849649192b0772581b39dc56bb64f",
-    "url": "/vuemusic/img/notfound.png"
-  },
-  {
     "revision": "c1204d68b4b58d5b67e1d369fd909233",
     "url": "/vuemusic/img/notfound/1.png"
   },
@@ -208,40 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/previcon.png"
   },
   {
-    "revision": "954752c641c4a02fa17621cb7fb40da9",
-    "url": "/vuemusic/img/recommendation.png"
-  },
-  {
-    "revision": "e75bf162ed948df2329063721bd299da",
-    "url": "/vuemusic/img/test2.png"
-  },
-  {
-    "revision": "4e983234b01ca91b364ad28758b477e6",
-    "url": "/vuemusic/img/test3.png"
-  },
-  {
-    "revision": "95ddfbf7bf49fd774e2add1f95f2e613",
-    "url": "/vuemusic/img/test4.png"
-  },
-  {
-    "revision": "f6ac8d3a6e26691184d007fd3853f9e5",
-    "url": "/vuemusic/img/test5.png"
-  },
-  {
-    "revision": "2ce99a0232bfaa070081d9831006aee3",
-    "url": "/vuemusic/img/test6.png"
-  },
-  {
-    "revision": "e8fd44a5fbf619bac9a096230569433c",
-    "url": "/vuemusic/img/test8.png"
-  },
-  {
-    "revision": "2c6fe4578d2aa76ba3ddb10d4ab1bd25",
-    "url": "/vuemusic/img/test9.png"
-  },
-  {
-    "revision": "46be93c73ea1fa62cc2e3598a0b1c3a1",
-    "url": "/vuemusic/img/testt7.png"
+    "revision": "07f56969f0f20ec3fcd11c7c619e124e",
+    "url": "/vuemusic/img/preview-icon.png"
   },
   {
     "revision": "574530a354d87f0d956c04b4081f5c4f",
@@ -272,36 +212,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/user/7.png"
   },
   {
-    "revision": "694abee23ea616ea516bcb13709b27af",
-    "url": "/vuemusic/img/v-1.png"
-  },
-  {
-    "revision": "120356b685823699b459bdd5d48819e1",
-    "url": "/vuemusic/img/v-2.png"
-  },
-  {
-    "revision": "ad9372afee3fa76f3a9f0fbbf26c7eab",
-    "url": "/vuemusic/img/v-logo-color-3.png"
-  },
-  {
-    "revision": "e9f8a0d801d770e84e05028c91f2e200",
-    "url": "/vuemusic/img/v-logo-color.png"
-  },
-  {
-    "revision": "7411392e9927e114aad9cd6314fd9aa3",
-    "url": "/vuemusic/img/v-logo-color2.png"
-  },
-  {
-    "revision": "1f0f37ffe2c1a55392ce207c710a20f4",
-    "url": "/vuemusic/img/vuemusic-full.png"
-  },
-  {
-    "revision": "8b29824b69be6f484f60296a82c9de57",
+    "revision": "397b26223a5fad02999004c3232539f5",
     "url": "/vuemusic/index.html"
   },
   {
-    "revision": "a7bb629a1f5fbed8ec6e",
-    "url": "/vuemusic/js/app.a3265eee.js"
+    "revision": "59d8e2241b7a5af09328",
+    "url": "/vuemusic/js/app.7af72617.js"
   },
   {
     "revision": "683b95c41ad3be911d30",
