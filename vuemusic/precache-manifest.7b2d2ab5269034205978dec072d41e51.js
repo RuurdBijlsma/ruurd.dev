@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59d8e2241b7a5af09328",
+    "revision": "53ac613946f4d01b9361",
     "url": "/vuemusic/css/app.4ef12d3b.css"
   },
   {
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a75e15cf1907d0b573f9",
     "url": "/vuemusic/css/chunk-2d818bb1.6faa2aa5.css"
-  },
-  {
-    "revision": "d2efa72ba778027724ed",
-    "url": "/vuemusic/css/chunk-34ab28e0.d79cb065.css"
   },
   {
     "revision": "400e5c7372f1d6747682",
@@ -66,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e539eba556a28b31bfba",
     "url": "/vuemusic/css/chunk-d0b3c9d6.7944a41e.css"
+  },
+  {
+    "revision": "8da0bb76f8c4ce78aa25",
+    "url": "/vuemusic/css/chunk-d6c4cc50.58d27891.css"
   },
   {
     "revision": "834c473341bb86c42252",
@@ -212,12 +212,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/user/7.png"
   },
   {
-    "revision": "397b26223a5fad02999004c3232539f5",
+    "revision": "657ccd121705cfdfc53a18a829d01c89",
     "url": "/vuemusic/index.html"
   },
   {
-    "revision": "59d8e2241b7a5af09328",
-    "url": "/vuemusic/js/app.7af72617.js"
+    "revision": "53ac613946f4d01b9361",
+    "url": "/vuemusic/js/app.0be38405.js"
   },
   {
     "revision": "683b95c41ad3be911d30",
@@ -242,10 +242,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a75e15cf1907d0b573f9",
     "url": "/vuemusic/js/chunk-2d818bb1.861b183f.js"
-  },
-  {
-    "revision": "d2efa72ba778027724ed",
-    "url": "/vuemusic/js/chunk-34ab28e0.e900013a.js"
   },
   {
     "revision": "400e5c7372f1d6747682",
@@ -286,6 +282,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e539eba556a28b31bfba",
     "url": "/vuemusic/js/chunk-d0b3c9d6.f39e825f.js"
+  },
+  {
+    "revision": "8da0bb76f8c4ce78aa25",
+    "url": "/vuemusic/js/chunk-d6c4cc50.1533c359.js"
   },
   {
     "revision": "834c473341bb86c42252",
