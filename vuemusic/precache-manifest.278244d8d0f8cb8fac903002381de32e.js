@@ -212,7 +212,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuemusic/img/user/7.png"
   },
   {
-    "revision": "657ccd121705cfdfc53a18a829d01c89",
+    "revision": "22798b8d92707bfdc67168b22fca0328",
     "url": "/vuemusic/index.html"
   },
   {
