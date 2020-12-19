@@ -133,6 +133,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/moviemaker/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/musicvisualizer/</loc>
  <changefreq>weekly</changefreq>
 </url>
@@ -245,15 +249,15 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>https://ruurd.dev/vuemusic/</loc>
- <changefreq>weekly</changefreq>
-</url>
-<url>
  <loc>https://ruurd.dev/vuemusic-3/</loc>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://ruurd.dev/vuemusic-4/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://ruurd.dev/vuemusic/</loc>
  <changefreq>weekly</changefreq>
 </url>
 <url>
