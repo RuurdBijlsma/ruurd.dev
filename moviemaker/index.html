@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Ruurd Movie Maker</title>
+    <meta name="description" content="Home page for Ruurd Movie Maker">
     <meta name="viewport" content="width=device-width">
 </head>
 
@@ -15,19 +17,53 @@
         <a href="privacy.html">Privacy policy</a>
         <br>
         <a href="tos.html">Terms of service</a>
+        <h2>What will this app do with your user data</h2>
+        <p>This app is a video editor that allows you to cut videos and upload them to YouTube, or export to a file.
+            YouTube login is needed only if you want to export videos to YouTube. <br>
+            If you log in, the app will request to "Manage your YouTube videos", which grants the app the right to
+            upload videos to your channel.<br>
+            It will also request to "View your YouTube account", this is needed to show the avatar of the logged in
+            channel, so you can see what account you're logged in with.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Cut video
+                <ul>
+                    <li>Set start point</li>
+                    <li>Set end point</li>
+                    <li>Split video</li>
+                </ul>
+            </li>
+            <li>Change video volume</li>
+            <li>Change playback rate</li>
+            <li>Concatenate videos</li>
+            <li>Change fps with support for motion interpolation</li>
+            <li>Change resolution and bitrate</li>
+            <li>Advanced export settings contain many ffmpeg filters:
+                <ul>
+                    <li>Change contrast, brightness, saturation</li>
+                    <li>Bass boost</li>
+                    <li>Add echo to audio</li>
+                    <li>Create a histogram of video or audio</li>
+                    <li>Remove logo embedded in video</li>
+                    <li>Hue</li>
+                    <li>And many more filters</li>
+                </ul>
+            </li>
+            <li>Upload to YouTube from the editor</li>
+        </ul>
+        <h2>Screenshots</h2>
+        <img src="img/basic.png" alt="Main page screenshot">
+        <p>Light theme</p>
+        <img src="img/basic-light.png" alt="Light theme screenshot">
+        <p>Export settings</p>
+        <img src="img/export-settings.png" alt="Export settings screenshot">
+        <p>Advanced export settings</p>
+        <img src="img/advanced.png" alt="Export settings screenshot">
+        <p>Export status</p>
+        <img src="img/export-status.png" alt="Export status screenshot">
+        <p>Upload dialog</p>
+        <img src="img/upload.png" alt="Upload dialog screenshot">
     </div>
-    <p>Simple video editor that allows you to cut videos and upload them to YouTube, or export to a file.</p>
-    <img src="img/basic.png">
-    <p>Light theme</p>
-    <img src="img/basic-light.png">
-    <p>Export settings</p>
-    <img src="img/export-settings.png">
-    <p>Advanced export settings</p>
-    <img src="img/advanced.png">
-    <p>Export status</p>
-    <img src="img/export-status.png">
-    <p>Upload settings</p>
-    <img src="img/upload.png">
 </body>
 
 <style>
@@ -37,11 +73,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.5em;
-        width: 100%;
+        font-size: 1.2em;
+        width: calc(100% - 20px);
         margin: 0;
         padding: 10px;
         text-align: center;
+    }
+
+    ul {
+        text-align: left;
     }
 
     a {
@@ -50,18 +90,17 @@
         border-radius: 5px;
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
         margin-bottom: 0.5em;
-        background-color:rgb(133, 21, 105);
-        color:white;
+        background-color: rgb(133, 21, 105);
+        color: white;
     }
 
     .wrapper {
-        margin: 90px auto;
+        margin: 40px;
         max-width: 900px;
         width: 100%;
     }
 
     img {
-        max-width: 900px;
         width: 100%;
     }
 </style>
