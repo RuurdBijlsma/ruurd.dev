@@ -1,7 +1,6 @@
 import SkribbleBot from './SkribbleBot.js'
 import CustomDraw from './CustomDraw.js'
 // import cachedPaths from './cachedPaths.js';
-import hamburger from './hamburger.js';
 // let {background, paths, linePaths} = cachedPaths;
 
 document.addEventListener('DOMContentLoaded', init, false);
@@ -21,7 +20,22 @@ document.addEventListener('DOMContentLoaded', init, false);
 // When it's not guessed, go with different google image
 // skribble integration
 
+async function fileChange(e) {
+    console.log(e.target.files);
+    let url = URL.createObjectURL(e.target.files[0]);
+    document.querySelector('.original').src = url;
+    let image = await SkribbleBot.getImageFromUrl(url);
+    await doImage(image);
+}
+
 async function init() {
+    document.querySelector(".file-input").addEventListener('change', fileChange);
+
+    // let image = await SkribbleBot.getImageFromUrl('img/hamburger.jpg');
+    // await doImage(image);
+}
+
+async function doImage(image) {
     let canvas = document.querySelector('.path-debug');
     canvas.width = 600;
     canvas.height = 600;
@@ -29,7 +43,6 @@ async function init() {
     canvas.style.height = canvas.height + 'px';
     CustomDraw.setCanvas(canvas);
     let pixels = 80000;
-    let image = await SkribbleBot.getImageFromUrl(hamburger);
     let ratio = image.height / image.width;
     let width = Math.round(Math.sqrt(pixels / ratio));
     let height = Math.round(width * ratio);
@@ -38,17 +51,17 @@ async function init() {
     let scale = Math.min(canvas.width / width, canvas.height / height);
     CustomDraw.setScale(scale);
 
-    let worker = new Worker('skribble-colour-worker.js', { type: 'module' });
-    let pathWorker = new Worker('skribble-path-worker.js', { type: 'module' });
+    let worker = new Worker('skribble-colour-worker.js', {type: 'module'});
+    let pathWorker = new Worker('skribble-path-worker.js', {type: 'module'});
 
     let commands = [];
-    worker.addEventListener('message', ({ data }) => {
+    worker.addEventListener('message', ({data}) => {
         switch (data.type) {
             case 'background':
                 commands.push(async () => await CustomDraw.fill(data.background));
                 break;
             case 'path':
-                let { brush, colour, path } = data.path;
+                let {brush, colour, path} = data.path;
                 commands.push(async () => await CustomDraw.setBrushSize(brush));
                 commands.push(async () => await CustomDraw.setColour(colour));
                 commands.push(async () => await CustomDraw.moveBrush(path));
@@ -60,7 +73,7 @@ async function init() {
 
         }
     }, false);
-    pathWorker.addEventListener('message', ({ data }) => {
+    pathWorker.addEventListener('message', ({data}) => {
         switch (data.type) {
             case 'paths':
                 commands.push(async () => await CustomDraw.setBrushSize(1));
@@ -114,8 +127,8 @@ async function debugSync() {
             console.log("Background set!");
             commands.push(async () => await CustomDraw.fill(background));
         },
-        async ({ path, brush, colour }) => {
-            console.log({ path, brush, colour });
+        async ({path, brush, colour}) => {
+            console.log({path, brush, colour});
             //Brush variable is radius
             commands.push(async () => await CustomDraw.setBrushSize(brush));
             commands.push(async () => await CustomDraw.setColour(colour));
@@ -155,7 +168,7 @@ async function debug() {
     let image = await SkribbleBot.getImageFromUrl('img/me2.jpg');
     let imageData = await SkribbleBot.getImageData(image, width, width);
     let height = Math.round(width / imageData.width * imageData.height);
-    console.log({ width, height })
+    console.log({width, height})
 
     originalCanvas.width = width;
     originalCanvas.height = height;
@@ -163,14 +176,14 @@ async function debug() {
     let linePaths = await SkribbleBot.imageToPath(imageData, pathCanvas);
 
     let context = pathCanvas.getContext('2d');
-    let { background, paths } = await SkribbleBot.imageToColours(imageData, CustomDraw.colours, CustomDraw.brushes,
-        background => console.log({ background }), path => console.log(path), colourCanvas);
-    console.log({ background, paths });
+    let {background, paths} = await SkribbleBot.imageToColours(imageData, CustomDraw.colours, CustomDraw.brushes,
+        background => console.log({background}), path => console.log(path), colourCanvas);
+    console.log({background, paths});
 
     context.fillStyle = `rgb(${background[0]},${background[1]},${background[2]})`;
     context.fillRect(0, 0, width, height);
 
-    for (let { path, colour, brush } of paths) {
+    for (let {path, colour, brush} of paths) {
         // console.log({ colour, length: path.length, brushSize: brush });
         await SkribbleBot.drawPath(context, path, brush * 2, `rgb(${colour[0]},${colour[1]},${colour[2]})`);
     }

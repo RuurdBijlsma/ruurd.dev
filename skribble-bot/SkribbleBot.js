@@ -4,7 +4,6 @@ class SkribbleBot {
     constructor() {
         this.remainingWhitePixels = -1;
         this.debug = true;
-        this.baseUrl = '';
     }
 
     getBrushNeighbours(width, height, x, y, brushRadius, squareBrush = false) {
@@ -293,9 +292,7 @@ class SkribbleBot {
     }
 
     async imageDataToCannyData(contextImage) {
-        return new Promise(async resolve => {
-
-            // let script = await (await fetch(this.baseUrl + 'lib/canny-worker.js')).text();
+        return new Promise(resolve => {
             let worker = new Worker('lib/canny-worker.js');
             worker.addEventListener('message', e => {
                 if (e.data.type === 'gradientMagnitude')

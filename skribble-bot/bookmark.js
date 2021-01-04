@@ -1,38 +1,30 @@
 // Code to call this: 
-
-// javascript:(function(){var script=document.createElement('script');script.type='module';script.src='//ruurd.dev/skribble-bot/bookmark.js';document.head.appendChild(script);})()
+// javascript:(function(){var script=document.createElement('script');script.type='module';script.src='//127.0.0.1:5500/bookmark.js';document.head.appendChild(script);})()
 
 import SkribbleBot from './SkribbleBot.js'
 import SkribbleDraw from './SkribbleDraw.js'
-import hamburger from './hamburger.js';
 
 init();
 
-async function init() {
+function init() {
     console.log("[HACKS INITIALIZED] Skribble hacks loaded [10/10][OPTIMIZED]");
 
     console.log(SkribbleBot, SkribbleDraw);
-    let canvas = document.querySelector('#canvasGame');
-    let rect = canvas.getBoundingClientRect();
+    canvas = document.querySelector('#canvasGame');
+    let { width, height } = canvas.getBoundingClientRect();
 
     let pixels = 70000;
-    SkribbleBot.baseUrl = 'https://ruurd.dev/skribble-bot/';
-    console.log(SkribbleBot.baseUrl);
-    let image = await SkribbleBot.getImageFromUrl(hamburger);
+    let image = await SkribbleBot.getImageFromUrl('img/hamburger.jpg');
     let ratio = image.height / image.width;
     let width = Math.round(Math.sqrt(pixels / ratio));
     let height = Math.round(width * ratio);
     let imageData = await SkribbleBot.getImageData(image, width, height);
 
-    let scale = Math.min(rect.width / width, rect.height / height);
+    let scale = Math.min(canvas.width / width, canvas.height / height);
     SkribbleDraw.setScale(scale);
 
-    let colourWorkerScript = await (await fetch(SkribbleBot.baseUrl + 'skribble-colour-worker.js')).text();
-    let pathWorkerScript = await (await fetch(SkribbleBot.baseUrl + 'skribble-path-worker.js')).text();
-    let worker = new Worker('data:application/javascript,' + encodeURIComponent(colourWorkerScript),
-        { type: 'module' });
-    let pathWorker = new Worker('data:application/javascript,' + encodeURIComponent(pathWorkerScript),
-        { type: 'module' });
+    let worker = new Worker('skribble-colour-worker.js', { type: 'module' });
+    let pathWorker = new Worker('skribble-path-worker.js', { type: 'module' });
 
     let commands = [];
     worker.addEventListener('message', ({ data }) => {

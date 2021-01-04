@@ -21,7 +21,11 @@ html {
 
 canvas {
     background-color: gray;
-    border:1px solid cyan;
+    border: 1px solid cyan;
+}
+
+.original {
+    max-height: 350px;
 }
 
 body {
