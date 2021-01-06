@@ -29,7 +29,7 @@ function init() {
 
         let r = 180, g = 120, b = 222;
         let pow = 1;
-        const maxIteration = 1000;
+        const maxIteration = 2000;
         for (let i = 0; i < maxIteration; i++) {
             let r2 = zReal * zReal + zImag * zImag;
             if (r2 > 1000000) {
