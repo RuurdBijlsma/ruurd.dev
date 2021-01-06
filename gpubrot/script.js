@@ -24,41 +24,35 @@ function init() {
         let ratio = this.constants.height / this.constants.width;
         let cReal = mapToReal(this.constants.width * posx + x / ratio / zoom, this.constants.width);
         let cImag = mapToImaginary(this.constants.height * posy + y / zoom, this.constants.height);
-        let zReal = cReal;
-        let zImag = cImag;
-        let iteration = 0;
-        const maxIteration = 2000;
+        let zReal = 0;
+        let zImag = 0;
 
+        let r = 180, g = 120, b = 222;
+        let pow = 1;
+        const maxIteration = 1000;
         for (let i = 0; i < maxIteration; i++) {
-            if (zReal * zReal + zImag * zImag > 4) {
+            let r2 = zReal * zReal + zImag * zImag;
+            if (r2 > 1000000) {
+                let v = zoom * zoom * Math.log(r2) / pow
+                r = 64 + 128 * v;
+                g = 128 * v * time / 1000;
+                b = 64 + 64 * v;
                 break;
             }
             let zImag2 = zImag * zImag;
             zImag = 2 * zReal * zImag + cImag;
             zReal = zReal * zReal - zImag2 + cReal;
-
-            iteration++;
+            pow *= 2;
         }
+        this.color((r % 256) / 255, (g % 256) / 255, (b % 256) / 255);
 
-        let multiplier = (time / 500) % 1;
-        let color = iteration / maxIteration;
-        if (color == 1) {
-            this.color(0, multiplier, 0, 1);
-        } else if (color < 0.25) {
-            this.color(color / 2 * multiplier, 0, color, 1);
-        } else if (color < 0.5) {
-            this.color(color, 0, color - multiplier, 1);
-        } else if (color < 0.75) {
-            this.color(color, 0, color / 2 + multiplier / 2, 1);
-        } else {
-            this.color(color, 0, multiplier, 1);
-        }
     }, {
         constants: {
             width,
             height
         },
         output: [width, height],
+        loopMaxIterations: 2000,
         graphical: true,
         functions: [mapToImaginary, mapToReal]
     });
