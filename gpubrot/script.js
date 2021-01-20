@@ -51,6 +51,7 @@ function init() {
             width,
             height
         },
+        precision: 'unsigned',
         output: [width, height],
         loopMaxIterations: 2000,
         graphical: true,
