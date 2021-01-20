@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/download/precache-manifest.a92c13f3bb5402e7b2898780d9bfd19c.js"
+  "/download/precache-manifest.1477d8182d1fe08c504b3b1eeb858461.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "media-download"});
