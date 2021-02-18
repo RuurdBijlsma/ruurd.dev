@@ -169,6 +169,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/plex/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/pong/</loc>
  <changefreq>weekly</changefreq>
 </url>
