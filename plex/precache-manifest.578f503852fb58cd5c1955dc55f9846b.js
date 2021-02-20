@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "400c91d03d0eed454697",
+    "revision": "eaf1fc7c3aa083a0262b",
     "url": "/plex/css/app.c0e79299.css"
   },
   {
@@ -164,12 +164,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/img/user-notfound/1.png"
   },
   {
-    "revision": "a2300ff8b12532df6a5c3d6b9a98f3d6",
+    "revision": "68d39d8a17318e2fb147494a1bf08fae",
     "url": "/plex/index.html"
   },
   {
-    "revision": "400c91d03d0eed454697",
-    "url": "/plex/js/app.b38ef0ee.js"
+    "revision": "eaf1fc7c3aa083a0262b",
+    "url": "/plex/js/app.717f15cf.js"
   },
   {
     "revision": "8cc94514de347fb4ef21",
@@ -220,7 +220,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/js/chunk-vendors.c113487d.js"
   },
   {
-    "revision": "a9c6bfea5818ec1ff1ecddde48e99fe6",
+    "revision": "ef8b973692291bf7fce522a0fe3f6237",
     "url": "/plex/manifest.json"
   },
   {
