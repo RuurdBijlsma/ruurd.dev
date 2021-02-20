@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/plex/precache-manifest.23b47877bc6f211360fc5d8a09712588.js"
+  "/plex/precache-manifest.7adeb54e55cd35482c008824e189fec1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "plex-client"});

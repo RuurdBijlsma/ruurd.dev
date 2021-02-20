@@ -1,15 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d758728cddfb33f61cf",
-    "url": "/plex/css/app.1bd6b2f3.css"
+    "revision": "68d3e11c7cecec727062",
+    "url": "/plex/css/app.9dbcda18.css"
   },
   {
     "revision": "8cc94514de347fb4ef21",
     "url": "/plex/css/chunk-05aa78e7.08f1a0c4.css"
-  },
-  {
-    "revision": "0a8e9191a4d2d719a88d",
-    "url": "/plex/css/chunk-14ed80de.b8742874.css"
   },
   {
     "revision": "7b5599d7e3b73415ece1",
@@ -20,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/css/chunk-19469fa3.79718b9f.css"
   },
   {
-    "revision": "f064a92dfb849fb02a28",
-    "url": "/plex/css/chunk-3dbc7e81.1e28a913.css"
+    "revision": "2635eb2b7a8554292f91",
+    "url": "/plex/css/chunk-19813994.a452cb17.css"
   },
   {
-    "revision": "932da6513a1853c4c447",
-    "url": "/plex/css/chunk-45f4bed8.23dd007e.css"
+    "revision": "f064a92dfb849fb02a28",
+    "url": "/plex/css/chunk-3dbc7e81.1e28a913.css"
   },
   {
     "revision": "1e02fbfcdf1e712c556c",
@@ -44,12 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/css/chunk-8b182660.fa26a0c8.css"
   },
   {
+    "revision": "86002592a27307f33dc1",
+    "url": "/plex/css/chunk-a0943e14.04e00d19.css"
+  },
+  {
     "revision": "579420e4ac7722421fe1",
     "url": "/plex/css/chunk-e05c639c.0fdb9b9d.css"
   },
   {
     "revision": "c60ca7e88ee5033475b9",
     "url": "/plex/css/chunk-vendors.1fba21fa.css"
+  },
+  {
+    "revision": "5bfa4b573016f6c87574c2e903e86dfc",
+    "url": "/plex/empty.mp3"
   },
   {
     "revision": "ad77d1b6d5e4ff9b620a68faf857dd67",
@@ -160,20 +164,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/img/user-notfound/1.png"
   },
   {
-    "revision": "3f542fbd30a74c4b35b4bae5afb581b8",
+    "revision": "f26062652e59692cbac229762723dd8f",
     "url": "/plex/index.html"
   },
   {
-    "revision": "2d758728cddfb33f61cf",
-    "url": "/plex/js/app.d63ea20b.js"
+    "revision": "68d3e11c7cecec727062",
+    "url": "/plex/js/app.dda7b4ea.js"
   },
   {
     "revision": "8cc94514de347fb4ef21",
     "url": "/plex/js/chunk-05aa78e7.1dcb0629.js"
-  },
-  {
-    "revision": "0a8e9191a4d2d719a88d",
-    "url": "/plex/js/chunk-14ed80de.a7c37ea8.js"
   },
   {
     "revision": "7b5599d7e3b73415ece1",
@@ -184,12 +184,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plex/js/chunk-19469fa3.08c85157.js"
   },
   {
-    "revision": "f064a92dfb849fb02a28",
-    "url": "/plex/js/chunk-3dbc7e81.b21d7a90.js"
+    "revision": "2635eb2b7a8554292f91",
+    "url": "/plex/js/chunk-19813994.4e68572a.js"
   },
   {
-    "revision": "932da6513a1853c4c447",
-    "url": "/plex/js/chunk-45f4bed8.6cb2963e.js"
+    "revision": "f064a92dfb849fb02a28",
+    "url": "/plex/js/chunk-3dbc7e81.b21d7a90.js"
   },
   {
     "revision": "1e02fbfcdf1e712c556c",
@@ -206,6 +206,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "091e40d2ae1bf97402ae",
     "url": "/plex/js/chunk-8b182660.f0fc2d9a.js"
+  },
+  {
+    "revision": "86002592a27307f33dc1",
+    "url": "/plex/js/chunk-a0943e14.92377689.js"
   },
   {
     "revision": "579420e4ac7722421fe1",
