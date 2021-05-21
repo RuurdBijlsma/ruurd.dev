@@ -165,6 +165,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/photos/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/platform/</loc>
  <changefreq>weekly</changefreq>
 </url>
