@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e747bc452914de2090c3",
-    "url": "/scribble/css/app.b69c4245.css"
+    "revision": "b383b816398f4bb7b8c8",
+    "url": "/scribble/css/app.23634fd2.css"
   },
   {
-    "revision": "46738d76a50fa6b37685",
-    "url": "/scribble/css/chunk-2ef11938.c037770c.css"
+    "revision": "ef91acfcd8f4facd0b05",
+    "url": "/scribble/css/chunk-50291e14.6600aa04.css"
   },
   {
-    "revision": "f6a4317635ff9219b16c",
-    "url": "/scribble/css/chunk-cd992bde.b2782118.css"
+    "revision": "6cae0a576cb9604d1487",
+    "url": "/scribble/css/chunk-84b1a03a.ed1d898f.css"
   },
   {
-    "revision": "8ea18ad481013e153b03",
-    "url": "/scribble/css/chunk-vendors.200a2794.css"
+    "revision": "fa4e2631112d71b6f23e",
+    "url": "/scribble/css/chunk-vendors.88516907.css"
   },
   {
     "revision": "357b0cde48f69febb9dd00bed99ab8fd",
@@ -36,24 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribble/img/trash.b6f2bd7b.png"
   },
   {
-    "revision": "7cf33f50b371eaf48d52ad7d076fc71f",
+    "revision": "73c77e67767a56e1fae222f8419c766f",
     "url": "/scribble/index.html"
   },
   {
-    "revision": "e747bc452914de2090c3",
-    "url": "/scribble/js/app.dafa2a54.js"
+    "revision": "b383b816398f4bb7b8c8",
+    "url": "/scribble/js/app.c8793ea6.js"
   },
   {
-    "revision": "46738d76a50fa6b37685",
-    "url": "/scribble/js/chunk-2ef11938.25655749.js"
+    "revision": "ef91acfcd8f4facd0b05",
+    "url": "/scribble/js/chunk-50291e14.eaad1678.js"
   },
   {
-    "revision": "f6a4317635ff9219b16c",
-    "url": "/scribble/js/chunk-cd992bde.8cc52306.js"
+    "revision": "6cae0a576cb9604d1487",
+    "url": "/scribble/js/chunk-84b1a03a.1ea15722.js"
   },
   {
-    "revision": "8ea18ad481013e153b03",
-    "url": "/scribble/js/chunk-vendors.39735a4e.js"
+    "revision": "fa4e2631112d71b6f23e",
+    "url": "/scribble/js/chunk-vendors.673b985e.js"
   },
   {
     "revision": "61ba36f910bc409d726e8662aab98d55",
