@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photos/img/transparent-icon-512.e6e999bf.png"
   },
   {
-    "revision": "36020016d704efa081dd3e8214de2147",
+    "revision": "693e5b4bdb52eb62cacdae8f8cca70af",
     "url": "/photos/index.html"
   },
   {
@@ -52,7 +52,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photos/js/chunk-vendors.9de85a38.js"
   },
   {
-    "revision": "74da3f4297d16d6f3f7b99aa38bb399a",
+    "revision": "5fc776c9300f671a3bcecc67e472c616",
     "url": "/photos/manifest.json"
   },
   {
