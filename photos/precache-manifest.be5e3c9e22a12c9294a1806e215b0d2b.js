@@ -1,7 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a29478b27487b1b9fbf",
-    "url": "/photos/css/app.38964307.css"
+    "revision": "1cde2f78873198b772c1",
+    "url": "/photos/css/app.9ad9ef01.css"
+  },
+  {
+    "revision": "ccf230509f31de1ce8ba",
+    "url": "/photos/css/chunk-32b10c6e.f792aa6f.css"
   },
   {
     "revision": "9f928aa4aec0a554a58c",
@@ -14,10 +18,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45ad61026c98458e10c4",
     "url": "/photos/css/chunk-6a0d8bb6.dfd9d476.css"
-  },
-  {
-    "revision": "3bd38cb04af378cb36e7",
-    "url": "/photos/css/chunk-6b4322d0.4f8eff22.css"
   },
   {
     "revision": "aa33614d4aa5e12958e5",
@@ -36,12 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photos/img/transparent-color-icon-256.7963b11c.png"
   },
   {
-    "revision": "3400fd0336b1519841b1a3304b5899a6",
+    "revision": "0fbe55801c81bd5395068330f19d152f",
     "url": "/photos/index.html"
   },
   {
-    "revision": "8a29478b27487b1b9fbf",
-    "url": "/photos/js/app.977b2bbe.js"
+    "revision": "1cde2f78873198b772c1",
+    "url": "/photos/js/app.c85dbef5.js"
+  },
+  {
+    "revision": "ccf230509f31de1ce8ba",
+    "url": "/photos/js/chunk-32b10c6e.f3ac2cc4.js"
   },
   {
     "revision": "9f928aa4aec0a554a58c",
@@ -54,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45ad61026c98458e10c4",
     "url": "/photos/js/chunk-6a0d8bb6.1f1dcd80.js"
-  },
-  {
-    "revision": "3bd38cb04af378cb36e7",
-    "url": "/photos/js/chunk-6b4322d0.b0be1a39.js"
   },
   {
     "revision": "aa33614d4aa5e12958e5",
