@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8020ca075e51ba8fd949",
+    "revision": "cde9f9f897880cc594a2",
     "url": "/photos/css/app.399b82be.css"
   },
   {
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photos/img/transparent-color-icon-256.7963b11c.png"
   },
   {
-    "revision": "bd59d07b180537b758f2cabc3091a796",
+    "revision": "357bab270c8a6119029439cc771c345d",
     "url": "/photos/index.html"
   },
   {
-    "revision": "8020ca075e51ba8fd949",
-    "url": "/photos/js/app.18f5f4b8.js"
+    "revision": "cde9f9f897880cc594a2",
+    "url": "/photos/js/app.103577a6.js"
   },
   {
     "revision": "cf8e84276dd4aab6aa50",
