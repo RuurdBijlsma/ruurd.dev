@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photos/img/transparent-color-icon-256.7963b11c.png"
   },
   {
-    "revision": "4bb82e97b2598d637eb2871918b593c3",
+    "revision": "b8fa280c506bb73e2228077c6b29d5c3",
     "url": "/photos/index.html"
   },
   {
