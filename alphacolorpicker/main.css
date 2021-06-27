@@ -13,6 +13,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 canvas{
+    image-rendering: pixelated;
     background-color: grey;
 }
 html {
@@ -23,6 +24,11 @@ html {
 
 body {
     height: 100%;
+}
+
+.output{
+    font-size: 30px;
+    user-select: text;
 }
 
 ::-webkit-scrollbar {
