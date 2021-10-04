@@ -97,6 +97,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/host2/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/knightspider/</loc>
  <changefreq>weekly</changefreq>
 </url>
