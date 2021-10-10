@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2eca37f4168ccbd66ff2",
-    "url": "/learning-flags/css/app.edcb44f4.css"
+    "revision": "2b86c6111f798ad781b9",
+    "url": "/learning-flags/css/app.bed938eb.css"
   },
   {
     "revision": "c1861e0fc62e1539c89e",
@@ -1032,12 +1032,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/flags/svg/zw.svg"
   },
   {
-    "revision": "be858b1c169cfb3acf582bc5a8532650",
+    "revision": "e8788ea6a0c12ad841a1403a3068bb6c",
+    "url": "/learning-flags/img/favicon.png"
+  },
+  {
+    "revision": "54c339a8c3cc60815d779b0d7dec5cfd",
+    "url": "/learning-flags/img/icon.png"
+  },
+  {
+    "revision": "a03e15ae2a084f540282e2c967ced500",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "2eca37f4168ccbd66ff2",
-    "url": "/learning-flags/js/app.687eb868.js"
+    "revision": "2b86c6111f798ad781b9",
+    "url": "/learning-flags/js/app.8002d5fe.js"
   },
   {
     "revision": "8b109dcb98b3557c25e3",
