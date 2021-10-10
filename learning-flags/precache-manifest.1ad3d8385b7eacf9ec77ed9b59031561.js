@@ -1032,11 +1032,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/flags/svg/zw.svg"
   },
   {
-    "revision": "e8788ea6a0c12ad841a1403a3068bb6c",
+    "revision": "23e86dd78d8b44b28f0a01b6cdf507e0",
     "url": "/learning-flags/img/favicon.png"
   },
   {
-    "revision": "54c339a8c3cc60815d779b0d7dec5cfd",
+    "revision": "2e827f71ca0fdd44c6c300493521e372",
     "url": "/learning-flags/img/icon.png"
   },
   {
