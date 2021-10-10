@@ -1,11 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d041e0bb1aaf934125c",
-    "url": "/learning-flags/css/app.35643f92.css"
+    "revision": "4c23782bb6c4fcda273c",
+    "url": "/learning-flags/css/app.25240b61.css"
   },
   {
-    "revision": "194fb46497b9a048a13b",
-    "url": "/learning-flags/css/chunk-vendors.da50d3cd.css"
+    "revision": "c7376dd5ad2fc9f9fdf8",
+    "url": "/learning-flags/css/chunk-063d22a4.c8e1698d.css"
+  },
+  {
+    "revision": "54ee72ddd7f60ce5dd4b",
+    "url": "/learning-flags/css/chunk-49da1a6c.6e9e5cde.css"
+  },
+  {
+    "revision": "2d0154b91ff3799dc2fc",
+    "url": "/learning-flags/css/chunk-7b5b051e.4093c261.css"
+  },
+  {
+    "revision": "6f0b9c81e62abd4e5d9c",
+    "url": "/learning-flags/css/chunk-a294d57a.681dd3b8.css"
+  },
+  {
+    "revision": "a5f4f912beb617f97bf4",
+    "url": "/learning-flags/css/chunk-vendors.75ffe75e.css"
   },
   {
     "revision": "cbb2ddf1bc31d976916079e4ca808d72",
@@ -1036,20 +1052,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/img/icon.png"
   },
   {
-    "revision": "cf451c88eba9d577d1204123055a7526",
+    "revision": "8e421d6fea4e7340b27740dae827f5f4",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "3d041e0bb1aaf934125c",
-    "url": "/learning-flags/js/app.a74f1d19.js"
+    "revision": "4c23782bb6c4fcda273c",
+    "url": "/learning-flags/js/app.2483c04d.js"
   },
   {
-    "revision": "e3a70a289a7011a2ab37",
-    "url": "/learning-flags/js/chunk-2d0b3289.ed49cfe2.js"
+    "revision": "c7376dd5ad2fc9f9fdf8",
+    "url": "/learning-flags/js/chunk-063d22a4.af171f68.js"
   },
   {
-    "revision": "194fb46497b9a048a13b",
-    "url": "/learning-flags/js/chunk-vendors.525ad819.js"
+    "revision": "54ee72ddd7f60ce5dd4b",
+    "url": "/learning-flags/js/chunk-49da1a6c.547c32fa.js"
+  },
+  {
+    "revision": "2d0154b91ff3799dc2fc",
+    "url": "/learning-flags/js/chunk-7b5b051e.3b1b48d6.js"
+  },
+  {
+    "revision": "6f0b9c81e62abd4e5d9c",
+    "url": "/learning-flags/js/chunk-a294d57a.04ff3cb5.js"
+  },
+  {
+    "revision": "a5f4f912beb617f97bf4",
+    "url": "/learning-flags/js/chunk-vendors.9eea7f2a.js"
   },
   {
     "revision": "f536e715dd38b7c9c1b43a2f8ad5ae8d",
