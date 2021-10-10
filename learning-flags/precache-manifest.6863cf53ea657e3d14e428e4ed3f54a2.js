@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d4813e32fdbce87b88e",
+    "revision": "5766c323e0775a9fcf85",
     "url": "/learning-flags/css/app.25240b61.css"
   },
   {
-    "revision": "ae205a667fd0afc054c9",
-    "url": "/learning-flags/css/chunk-4ea69f04.3cc97ed7.css"
+    "revision": "64fdb48242cfd3bf8be0",
+    "url": "/learning-flags/css/chunk-17bc685d.618b34ef.css"
   },
   {
     "revision": "2d0154b91ff3799dc2fc",
     "url": "/learning-flags/css/chunk-7b5b051e.4093c261.css"
   },
   {
-    "revision": "bb0fff19e8b3684da029",
-    "url": "/learning-flags/css/chunk-9622b596.b9dc217e.css"
-  },
-  {
     "revision": "6f0b9c81e62abd4e5d9c",
     "url": "/learning-flags/css/chunk-a294d57a.681dd3b8.css"
+  },
+  {
+    "revision": "7b41b021edb820e18ed2",
+    "url": "/learning-flags/css/chunk-eef6d77e.c3f33329.css"
   },
   {
     "revision": "a5f4f912beb617f97bf4",
@@ -1052,28 +1052,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/img/icon.png"
   },
   {
-    "revision": "fe660fd0e7128ccdedee749aa0a0e9b3",
+    "revision": "c89ac92d9d756d980a1ecf316e0edea9",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "1d4813e32fdbce87b88e",
-    "url": "/learning-flags/js/app.93fd2dff.js"
+    "revision": "5766c323e0775a9fcf85",
+    "url": "/learning-flags/js/app.b0053b33.js"
   },
   {
-    "revision": "ae205a667fd0afc054c9",
-    "url": "/learning-flags/js/chunk-4ea69f04.cb647cac.js"
+    "revision": "64fdb48242cfd3bf8be0",
+    "url": "/learning-flags/js/chunk-17bc685d.84edb6c4.js"
   },
   {
     "revision": "2d0154b91ff3799dc2fc",
     "url": "/learning-flags/js/chunk-7b5b051e.3b1b48d6.js"
   },
   {
-    "revision": "bb0fff19e8b3684da029",
-    "url": "/learning-flags/js/chunk-9622b596.22a18d19.js"
-  },
-  {
     "revision": "6f0b9c81e62abd4e5d9c",
     "url": "/learning-flags/js/chunk-a294d57a.04ff3cb5.js"
+  },
+  {
+    "revision": "7b41b021edb820e18ed2",
+    "url": "/learning-flags/js/chunk-eef6d77e.31aa49ed.js"
   },
   {
     "revision": "a5f4f912beb617f97bf4",
