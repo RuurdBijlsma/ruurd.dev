@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1cb4ce381b9906db6e26",
+    "revision": "3d041e0bb1aaf934125c",
     "url": "/learning-flags/css/app.35643f92.css"
   },
   {
@@ -1036,12 +1036,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/img/icon.png"
   },
   {
-    "revision": "68819eaf950d1201a465e5b05181bf33",
+    "revision": "cf451c88eba9d577d1204123055a7526",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "1cb4ce381b9906db6e26",
-    "url": "/learning-flags/js/app.fa15bbe3.js"
+    "revision": "3d041e0bb1aaf934125c",
+    "url": "/learning-flags/js/app.a74f1d19.js"
   },
   {
     "revision": "e3a70a289a7011a2ab37",
