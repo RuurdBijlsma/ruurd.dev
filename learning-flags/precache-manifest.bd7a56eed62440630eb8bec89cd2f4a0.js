@@ -1,7 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac5eaa1edf6cbd8250fc",
+    "revision": "c911717b0dfcc989a043",
     "url": "/learning-flags/css/app.edb3e535.css"
+  },
+  {
+    "revision": "dc033d069c05ecd42f0d",
+    "url": "/learning-flags/css/chunk-013531ac.a614576c.css"
   },
   {
     "revision": "968a65e0d376e857e6e9",
@@ -12,20 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/css/chunk-1dcadaf6.1a4c2743.css"
   },
   {
-    "revision": "878a22611f086b5b696a",
-    "url": "/learning-flags/css/chunk-30cce9ba.4c88339e.css"
-  },
-  {
     "revision": "16985e6f055a6ee8e915",
     "url": "/learning-flags/css/chunk-31b1811a.339f4ac4.css"
   },
   {
-    "revision": "9ea31ec5bd18df66ebb1",
-    "url": "/learning-flags/css/chunk-374a4a76.3dd55afc.css"
-  },
-  {
     "revision": "22a92ee40418293d88dc",
     "url": "/learning-flags/css/chunk-544c834a.1396008c.css"
+  },
+  {
+    "revision": "aeb88918e2b303948d22",
+    "url": "/learning-flags/css/chunk-5896bff0.858e2c8b.css"
   },
   {
     "revision": "939cf932f0f25fc880c7",
@@ -1072,12 +1072,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/img/icon.png"
   },
   {
-    "revision": "b86f0575ae7b77b8f9d48e20cf75067f",
+    "revision": "0cce530ec33c381ed58637332b64bcdf",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "ac5eaa1edf6cbd8250fc",
-    "url": "/learning-flags/js/app.4188dcc8.js"
+    "revision": "c911717b0dfcc989a043",
+    "url": "/learning-flags/js/app.6c679a25.js"
+  },
+  {
+    "revision": "dc033d069c05ecd42f0d",
+    "url": "/learning-flags/js/chunk-013531ac.3a53c715.js"
   },
   {
     "revision": "968a65e0d376e857e6e9",
@@ -1088,20 +1092,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/js/chunk-1dcadaf6.17fbc05e.js"
   },
   {
-    "revision": "878a22611f086b5b696a",
-    "url": "/learning-flags/js/chunk-30cce9ba.aeb9691e.js"
-  },
-  {
     "revision": "16985e6f055a6ee8e915",
     "url": "/learning-flags/js/chunk-31b1811a.448b4187.js"
   },
   {
-    "revision": "9ea31ec5bd18df66ebb1",
-    "url": "/learning-flags/js/chunk-374a4a76.414fa8bd.js"
-  },
-  {
     "revision": "22a92ee40418293d88dc",
     "url": "/learning-flags/js/chunk-544c834a.210a92ec.js"
+  },
+  {
+    "revision": "aeb88918e2b303948d22",
+    "url": "/learning-flags/js/chunk-5896bff0.c5d8ffe8.js"
   },
   {
     "revision": "939cf932f0f25fc880c7",
