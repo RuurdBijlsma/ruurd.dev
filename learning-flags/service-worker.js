@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/learning-flags/precache-manifest.54defa177b5fcf3e33b788a155ff270b.js"
+  "/learning-flags/precache-manifest.a6a02405514b1a85c51e023d38eb6cd9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "learn-flags-client"});

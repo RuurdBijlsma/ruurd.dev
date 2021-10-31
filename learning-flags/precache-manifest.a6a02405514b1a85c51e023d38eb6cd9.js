@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd4024d4ba816fd9503f",
+    "revision": "ac5eaa1edf6cbd8250fc",
     "url": "/learning-flags/css/app.edb3e535.css"
   },
   {
@@ -8,43 +8,39 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/css/chunk-121a951e.56280535.css"
   },
   {
-    "revision": "b9df865f2b739b43749e",
-    "url": "/learning-flags/css/chunk-1a135f17.ac497906.css"
-  },
-  {
-    "revision": "e401a3fdf487b245f80b",
-    "url": "/learning-flags/css/chunk-1b703b04.7c76c101.css"
-  },
-  {
     "revision": "c3206d6ef5413b45a147",
     "url": "/learning-flags/css/chunk-1dcadaf6.1a4c2743.css"
+  },
+  {
+    "revision": "878a22611f086b5b696a",
+    "url": "/learning-flags/css/chunk-30cce9ba.4c88339e.css"
   },
   {
     "revision": "16985e6f055a6ee8e915",
     "url": "/learning-flags/css/chunk-31b1811a.339f4ac4.css"
   },
   {
-    "revision": "859098ffe7130973912a",
-    "url": "/learning-flags/css/chunk-4afb2cc9.4647083c.css"
+    "revision": "9ea31ec5bd18df66ebb1",
+    "url": "/learning-flags/css/chunk-374a4a76.3dd55afc.css"
   },
   {
-    "revision": "26eb8b296d1a5d1d6677",
-    "url": "/learning-flags/css/chunk-5e1363ea.1396008c.css"
+    "revision": "22a92ee40418293d88dc",
+    "url": "/learning-flags/css/chunk-544c834a.1396008c.css"
   },
   {
-    "revision": "aa183343f14d58e8d42e",
-    "url": "/learning-flags/css/chunk-63bd2c72.de484208.css"
+    "revision": "939cf932f0f25fc880c7",
+    "url": "/learning-flags/css/chunk-5da1200d.de484208.css"
   },
   {
     "revision": "2d0154b91ff3799dc2fc",
     "url": "/learning-flags/css/chunk-7b5b051e.4093c261.css"
   },
   {
-    "revision": "59654e8ef5cb519b3ea8",
-    "url": "/learning-flags/css/chunk-7d17f5e6.a8680544.css"
+    "revision": "9aa235df30ca2edfd49f",
+    "url": "/learning-flags/css/chunk-fc70ce78.7c76c101.css"
   },
   {
-    "revision": "db33a660d24f3a652632",
+    "revision": "cf7cfc7762d423f24db5",
     "url": "/learning-flags/css/chunk-vendors.75ffe75e.css"
   },
   {
@@ -1076,56 +1072,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-flags/img/icon.png"
   },
   {
-    "revision": "41646be90775f52fc4dbdf2112e09ae4",
+    "revision": "b86f0575ae7b77b8f9d48e20cf75067f",
     "url": "/learning-flags/index.html"
   },
   {
-    "revision": "fd4024d4ba816fd9503f",
-    "url": "/learning-flags/js/app.9177c937.js"
+    "revision": "ac5eaa1edf6cbd8250fc",
+    "url": "/learning-flags/js/app.4188dcc8.js"
   },
   {
     "revision": "968a65e0d376e857e6e9",
     "url": "/learning-flags/js/chunk-121a951e.53ae8f8a.js"
   },
   {
-    "revision": "b9df865f2b739b43749e",
-    "url": "/learning-flags/js/chunk-1a135f17.eab1dcca.js"
-  },
-  {
-    "revision": "e401a3fdf487b245f80b",
-    "url": "/learning-flags/js/chunk-1b703b04.21f94d98.js"
-  },
-  {
     "revision": "c3206d6ef5413b45a147",
     "url": "/learning-flags/js/chunk-1dcadaf6.17fbc05e.js"
+  },
+  {
+    "revision": "878a22611f086b5b696a",
+    "url": "/learning-flags/js/chunk-30cce9ba.aeb9691e.js"
   },
   {
     "revision": "16985e6f055a6ee8e915",
     "url": "/learning-flags/js/chunk-31b1811a.448b4187.js"
   },
   {
-    "revision": "859098ffe7130973912a",
-    "url": "/learning-flags/js/chunk-4afb2cc9.6d8ad29b.js"
+    "revision": "9ea31ec5bd18df66ebb1",
+    "url": "/learning-flags/js/chunk-374a4a76.414fa8bd.js"
   },
   {
-    "revision": "26eb8b296d1a5d1d6677",
-    "url": "/learning-flags/js/chunk-5e1363ea.83c111c1.js"
+    "revision": "22a92ee40418293d88dc",
+    "url": "/learning-flags/js/chunk-544c834a.210a92ec.js"
   },
   {
-    "revision": "aa183343f14d58e8d42e",
-    "url": "/learning-flags/js/chunk-63bd2c72.a3ca7c1d.js"
+    "revision": "939cf932f0f25fc880c7",
+    "url": "/learning-flags/js/chunk-5da1200d.a4601e5e.js"
   },
   {
     "revision": "2d0154b91ff3799dc2fc",
     "url": "/learning-flags/js/chunk-7b5b051e.3b1b48d6.js"
   },
   {
-    "revision": "59654e8ef5cb519b3ea8",
-    "url": "/learning-flags/js/chunk-7d17f5e6.a645a077.js"
+    "revision": "9aa235df30ca2edfd49f",
+    "url": "/learning-flags/js/chunk-fc70ce78.2c2048e1.js"
   },
   {
-    "revision": "db33a660d24f3a652632",
-    "url": "/learning-flags/js/chunk-vendors.206bc2f5.js"
+    "revision": "cf7cfc7762d423f24db5",
+    "url": "/learning-flags/js/chunk-vendors.48c615e5.js"
   },
   {
     "revision": "f536e715dd38b7c9c1b43a2f8ad5ae8d",
