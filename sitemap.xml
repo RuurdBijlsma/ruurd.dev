@@ -73,6 +73,10 @@
  <changefreq>weekly</changefreq>
 </url>
 <url>
+ <loc>https://ruurd.dev/flags-json-to-tsv/</loc>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
  <loc>https://ruurd.dev/frequencyvisualiser/</loc>
  <changefreq>weekly</changefreq>
 </url>
