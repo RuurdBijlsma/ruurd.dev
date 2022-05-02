@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/status/precache-manifest.e93f3b762a0ffbdad9805ba344c2460f.js"
+  "/status/precache-manifest.7dbad5fc2e371d166be5a68eed77ad45.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "live-status"});
