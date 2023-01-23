@@ -44,10 +44,8 @@ function init() {
     canvas.addEventListener('touchend', e => handleGesure(e.changedTouches[0].pageX, e.changedTouches[0].pageY), false);
 
     function handleGesure(endX, endY) {
-        console.log('handle')
         let x = startX - endX
         let y = startY - endY;
-        console.log(x, y);
         if (Math.abs(x) > Math.abs(y)) {
             // horizontal swipe
             if (x > 30)
