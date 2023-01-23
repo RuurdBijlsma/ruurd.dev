@@ -10,13 +10,13 @@ let gridY = 4;
 let lx = gridX - 1;
 let ly = gridY - 1;
 let hasWon = false;
+let score = 0;
 
 let grid = [];
 let startX, startY;
 
 function init() {
     canvas = document.querySelector('.canvas');
-    console.log(canvas);
     canvas.width = 500;
     canvas.height = 500;
     context = canvas.getContext('2d');
@@ -34,7 +34,6 @@ function init() {
 
     document.addEventListener('keyup', listenKey, false);
     document.addEventListener('touchstart', e => {
-        console.log(e);
         startX = e.touches[0].pageX;
         startY = e.touches[0].pageY;
     }, false);
@@ -126,6 +125,8 @@ function swipe(direction) {
                     setCell(x, y2, 0, direction);
                     changed = true;
                     values.push(value * 2);
+                    score += value * 2;
+                    document.querySelector('.score').innerText = `Score: ${score}`;
                     if (value * 2 === 2048 && !hasWon) {
                         alert("YOU ARE WINNER");
                         hasWon = true;
