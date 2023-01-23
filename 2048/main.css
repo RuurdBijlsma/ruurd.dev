@@ -22,6 +22,9 @@ html {
 body {
     height: 100%;
     overscroll-behavior: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .canvas {
