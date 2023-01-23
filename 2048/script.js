@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', init, false);
 let canvas = null;
 let context = null;
 
+let startTileCount = 2;
 let gridX = 4;
 let gridY = 4;
 let lx = gridX - 1;
@@ -23,25 +24,21 @@ function init() {
     for (let x = 0; x < gridX; x++) {
         let row = [];
         for (let y = 0; y < gridY; y++) {
-            let rand = Math.random();
-            if (rand < 0.3) {
-                row.push(4);
-            } else if (rand < 0.7) {
-                row.push(2);
-            } else {
-                row.push(0);
-            }
+            row.push(0);
         }
         grid.push(row);
     }
+    for(let i = 0; i < startTileCount; i++) {
+        spawn();
+    }
 
     document.addEventListener('keyup', listenKey, false);
-    canvas.addEventListener('touchstart', e => {
+    document.addEventListener('touchstart', e => {
         console.log(e);
         startX = e.touches[0].pageX;
         startY = e.touches[0].pageY;
     }, false);
-    canvas.addEventListener('touchend', e => handleGesure(e.changedTouches[0].pageX, e.changedTouches[0].pageY), false);
+    document.addEventListener('touchend', e => handleGesure(e.changedTouches[0].pageX, e.changedTouches[0].pageY), false);
 
     function handleGesure(endX, endY) {
         let x = startX - endX
