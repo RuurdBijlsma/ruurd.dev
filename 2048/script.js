@@ -11,6 +11,7 @@ let ly = gridY - 1;
 let hasWon = false;
 
 let grid = [];
+let startX, startY;
 
 function init() {
     canvas = document.querySelector('.canvas');
@@ -33,7 +34,34 @@ function init() {
         }
         grid.push(row);
     }
+
     document.addEventListener('keyup', listenKey, false);
+    canvas.addEventListener('touchstart', e => {
+        console.log(e);
+        startX = e.touches[0].pageX;
+        startY = e.touches[0].pageY;
+    }, false);
+    canvas.addEventListener('touchend', e => handleGesure(e.changedTouches[0].pageX, e.changedTouches[0].pageY), false);
+
+    function handleGesure(endX, endY) {
+        console.log('handle')
+        let x = startX - endX
+        let y = startY - endY;
+        console.log(x, y);
+        if (Math.abs(x) > Math.abs(y)) {
+            // horizontal swipe
+            if (x > 30)
+                swipe(Direction.left);
+            if (x < -30)
+                swipe(Direction.right);
+        } else {
+            // vertical swipe
+            if (y > 30)
+                swipe(Direction.up);
+            if (y < -30)
+                swipe(Direction.down);
+        }
+    }
     render();
 }
 
