@@ -11,6 +11,8 @@ let lx = gridX - 1;
 let ly = gridY - 1;
 let hasWon = false;
 let score = 0;
+let highScore = 0;
+let stuck = false;
 
 let grid = [];
 let startX, startY;
@@ -21,16 +23,7 @@ function init() {
     canvas.height = 500;
     context = canvas.getContext('2d');
 
-    for (let x = 0; x < gridX; x++) {
-        let row = [];
-        for (let y = 0; y < gridY; y++) {
-            row.push(0);
-        }
-        grid.push(row);
-    }
-    for(let i = 0; i < startTileCount; i++) {
-        spawn();
-    }
+    reset()
 
     document.addEventListener('keyup', listenKey, false);
     document.addEventListener('touchstart', e => {
@@ -57,6 +50,47 @@ function init() {
         }
     }
     render();
+}
+
+function randomLoop() {
+    let i;
+    i = setInterval(() => {
+        for (let j = 0; j < 1000; j++) {
+            reset();
+            while (true) {
+                if (stuck || hasWon) {
+                    break;
+                }
+                swipe(Math.floor(Math.random() * 4));
+            }
+            if (hasWon) {
+                clearInterval(i);
+                break;
+            }
+        }
+    })
+}
+
+function reset() {
+    if (score > highScore) {
+        highScore = score;
+        console.log(highScore)
+    }
+    hasWon = false;
+    score = 0;
+    grid = [];
+    stuck = false;
+
+    for (let x = 0; x < gridX; x++) {
+        let row = [];
+        for (let y = 0; y < gridY; y++) {
+            row.push(0);
+        }
+        grid.push(row);
+    }
+    for (let i = 0; i < startTileCount; i++) {
+        spawn();
+    }
 }
 
 const Direction = {
@@ -128,7 +162,7 @@ function swipe(direction) {
                     score += value * 2;
                     document.querySelector('.score').innerText = `Score: ${score}`;
                     if (value * 2 === 2048 && !hasWon) {
-                        alert("YOU ARE WINNER");
+                        console.log("YOU ARE WINNER");
                         hasWon = true;
                     }
                     y = y2;
@@ -160,6 +194,35 @@ function spawn() {
     }
     let randomTile = emptyTiles[Math.floor(Math.random() * emptyTiles.length)];
     grid[randomTile[0]][randomTile[1]] = Math.random() < 0.3 ? 4 : 2;
+
+    let mhmStuck = false
+    if (emptyTiles.length <= 1) {
+        mhmStuck = true;
+        outer:
+        for (let x = 0; x < gridX; x++) {
+            for (let y = 0; y < gridY; y++) {
+                let value = grid[x][y];
+                if (y < gridY - 1) {
+                    let belowValue = grid[x][y + 1];
+                    if (value === belowValue) {
+                        mhmStuck = false;
+                        break outer;
+                    }
+                }
+                if (x < gridX - 1) {
+                    let rightValue = grid[x + 1][y];
+                    if (value === rightValue) {
+                        mhmStuck = false;
+                        break outer;
+                    }
+                }
+            }
+        }
+    }
+    if (mhmStuck) {
+        console.log("STUCK");
+        stuck = true;
+    }
 }
 
 function render() {
