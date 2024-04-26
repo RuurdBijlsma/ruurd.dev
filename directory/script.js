@@ -20,7 +20,7 @@ async function init() {
     document.querySelector('.sites').innerHTML = html;
 }
 
-async function getHtml(site = 'https://ruurd.dev/sitemap.xml') {
+async function getHtml(site = `https://${location.host}/sitemap.xml`) {
     if (location.href.includes("127"))
         return `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
