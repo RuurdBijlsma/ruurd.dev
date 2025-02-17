@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPM Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            max-width:800px;
+            width:100%;
+            margin: 0 auto;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label,
+        input,
+        select {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        input,
+        select {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the BPM Calculator</h1>
+    <p>This calculation only works for The Netherlands, and only for diesel passenger cars, and it assumes the forfaitaire table is your best option for calculating bpm.</p>
+    <p>
+        The BPM (Belasting van Personenauto's en Motorrijwielen) is a one-time tax that must be paid when a new car is registered in the Netherlands. The amount of BPM is based on the CO2 emissions of the car, the date of first use, and the date of approval.
+    </p>
+    <p>
+        <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/auto_en_vervoer/belastingen_op_auto_en_motor/bpm/afschrijving_met_koerslijst_taxatierapport_of_forfaitaire_tabel/afschrijving_met_forfaitaire_tabel">Calculation source.</a>
+    </p>
+    <form id="bpmForm">
+        <label for="vanYear">Year of the van:</label>
+        <input type="number" id="vanYear" name="vanYear" placeholder="YYYY" required>
+        <br>
+
+        <label for="vanMonth">Month of the van:</label>
+        <select id="vanMonth" name="vanMonth" required>
+            <option value="">Select a month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <br>
+        <label for="co2Emissions">CO2 Emissions (g/km):</label>
+        <input type="number" id="co2Emissions" name="co2Emissions" required>
+        <br>
+        <!-- Button remains for manual calculation if needed, but is optional -->
+        <button type="button" onclick="calculateBPM()">Calculate BPM</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        function calculateBPM() {
+            // Get input values
+            const vanMonth = document.getElementById('vanMonth').value;
+            const vanYear = document.getElementById('vanYear').value;
+            const co2Emissions = document.getElementById('co2Emissions').value;
+
+            if (!(vanMonth && vanYear && co2Emissions)) {
+                document.getElementById('output').innerHTML = '';
+                return;
+            }
+
+            // Convert month name to month index (0 for January, …)
+            const monthNumbers = {
+                'January': 0, 'February': 1, 'March': 2, 'April': 3,
+                'May': 4, 'June': 5, 'July': 6, 'August': 7,
+                'September': 8, 'October': 9, 'November': 10, 'December': 11
+            };
+
+            // Date of first use by the van (assumed as the first day of the selected month)
+            const firstUseDate = new Date(parseInt(vanYear), monthNumbers[vanMonth], 1);
+            // Use today's date as the approval date
+            const approvalDate = new Date();
+
+            // Calculate month difference (if any part of a month is used, count it as a full month)
+            let totalMonths = (approvalDate.getFullYear() - firstUseDate.getFullYear()) * 12 +
+                (approvalDate.getMonth() - firstUseDate.getMonth());
+            if (approvalDate.getDate() > firstUseDate.getDate()) {
+                totalMonths++;
+            }
+            // Ensure at least 0 months
+            totalMonths = Math.max(totalMonths, 0);
+
+            // Forfaitaire afschrijving tabel (intervals in months)
+            const depreciationTable = [
+                { lower: 0, upper: 1, base: 0, rate: 12 },
+                { lower: 1, upper: 3, base: 12, rate: 4 },
+                { lower: 3, upper: 5, base: 20, rate: 3.5 },
+                { lower: 5, upper: 9, base: 27, rate: 1.5 },
+                { lower: 9, upper: 18, base: 33, rate: 1 },
+                { lower: 18, upper: 30, base: 42, rate: 0.75 },
+                { lower: 30, upper: 42, base: 51, rate: 0.5 },
+                { lower: 42, upper: 54, base: 57, rate: 0.42 },
+                { lower: 54, upper: 66, base: 62, rate: 0.42 },
+                { lower: 66, upper: 78, base: 67, rate: 0.42 },
+                { lower: 78, upper: 90, base: 72, rate: 0.25 },
+                { lower: 90, upper: 102, base: 75, rate: 0.25 },
+                { lower: 102, upper: 114, base: 78, rate: 0.25 },
+                { lower: 114, upper: Infinity, base: 81, rate: 0.19 }
+            ];
+
+            // Determine depreciation percentage
+            let depreciationPercentage = 0;
+            for (const row of depreciationTable) {
+                if (totalMonths <= row.upper) {
+                    let extraMonths = totalMonths - row.lower;
+                    extraMonths = extraMonths > 0 ? Math.ceil(extraMonths) : 0;
+                    depreciationPercentage = row.base + row.rate * extraMonths;
+                    break;
+                }
+            }
+            // Cap the depreciation percentage at 100%
+            if (depreciationPercentage > 100) {
+                depreciationPercentage = 100;
+            }
+
+            // Calculate bruto BPM (Before depreciation)
+            const co2 = parseFloat(co2Emissions);
+            const bpmCO2 = ((co2 - 109) * 137) + 2010;
+            const dieselSurcharge = (co2 - 75) * 86.67;
+            const brutoBPM = bpmCO2 + dieselSurcharge;
+
+            // Calculate te betalen BPM after applying depreciation
+            const teBetalenBPM = ((100 - depreciationPercentage) / 100) * brutoBPM;
+
+            // Build output HTML
+            const outputHTML = `
+            <h2>Calculation Result</h2>
+            <p>First use date: ${firstUseDate.toLocaleDateString()}</p>
+            <p>Approval date: ${approvalDate.toLocaleDateString()}</p>
+            <p>Total months (rounded up): ${totalMonths}</p>
+            <p>Depreciation percentage: ${depreciationPercentage.toFixed(2)}%</p>
+            <p>Bruto BPM: €${brutoBPM.toFixed(2)}</p>
+            <p>Te betalen BPM: €${teBetalenBPM.toFixed(2)}</p>
+            `;
+
+            // Output the result to the "output" div
+            document.getElementById('output').innerHTML = outputHTML;
+        }
+
+        // Listen for changes in any input field within the form
+        document.getElementById('bpmForm').addEventListener('input', calculateBPM);
+    </script>
+</body>
+
+</html>
